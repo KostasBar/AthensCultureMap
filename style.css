@@ -1,0 +1,88 @@
+:root {
+  --main-color: #111;
+  --secondary-color: #555;
+  --accent-color: #1a73e8;
+  --bg-color: #fafafa;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background-color: var(--bg-color);
+  color: var(--main-color);
+  line-height: 1.6;
+}
+
+header {
+  background-color: #fff;
+  padding: 2rem 1rem 1rem;
+  border-bottom: 1px solid #e0e0e0;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+nav {
+  margin-top: 0.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  margin: 0 0.75rem;
+  font-weight: 500;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+#map {
+  height: 700px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.leaflet-popup-content-wrapper {
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.leaflet-popup-content {
+  font-size: 0.95rem;
+  color: var(--main-color);
+}
+
+.leaflet-popup-content-wrapper {
+  max-height: 350px;
+  overflow-y: auto;
+}
+
+a.more-link {
+  display: inline-block;
+  margin-top: 5px;
+  text-decoration: none;
+  color: var(--accent-color);
+  font-weight: 500;
+}
+
+a.more-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  nav a {
+    display: block;
+    margin: 0.3rem 0;
+  }
+}

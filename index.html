@@ -10,114 +10,30 @@
 
   <!-- Leaflet CSS -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-
-  <style>
-    :root {
-      --main-color: #111;
-      --secondary-color: #555;
-      --accent-color: #1a73e8;
-      --bg-color: #fafafa;
-    }
-
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background-color: var(--bg-color);
-      color: var(--main-color);
-      line-height: 1.6;
-    }
-
-    header {
-      background-color: #fff;
-      padding: 2rem 1rem 1rem;
-      border-bottom: 1px solid #e0e0e0;
-      text-align: center;
-    }
-
-    header h1 {
-      font-size: 2rem;
-      margin: 0;
-    }
-
-    nav {
-      margin-top: 0.5rem;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: var(--secondary-color);
-      margin: 0 0.75rem;
-      font-weight: 500;
-    }
-
-    .container {
-      max-width: 1200px;
-      margin: 2rem auto;
-      padding: 0 1rem;  
-    }
-
-    #map {
-      height: 700px;
-      width: 100%;
-      border: 1px solid #ddd;
-      border-radius: 10px;
-    }
-
-    .leaflet-popup-content-wrapper {
-      border-radius: 10px;
-      padding: 10px;
-    }
-
-    .leaflet-popup-content {
-      font-size: 0.95rem;
-      color: var(--main-color);
-    }
-
-    .leaflet-popup-content-wrapper {
-      max-height: 350px;
-      overflow-y: auto;
-    }
-
-    a.more-link {
-      display: inline-block;
-      margin-top: 5px;
-      text-decoration: none;
-      color: var(--accent-color);
-      font-weight: 500;
-    }
-
-    a.more-link:hover {
-      text-decoration: underline;
-    }
-
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 1.5rem;
-      }
-
-      nav a {
-        display: block;
-        margin: 0.3rem 0;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 
 <header>
   <h1>Πολιτιστικός Χάρτης Αθήνας</h1>
-  <nav>
-    <a href="#">Αρχική</a>
-    <a href="#">Μνημεία</a>
-    <a href="#">Επικοινωνία</a>
-  </nav>
 </header>
 
 <div class="container">
   <h2>Σημεία Ενδιαφέροντος</h2>
   <p>Παρακάτω εμφανίζονται σημαντικά πολιτιστικά σημεία στην πόλη της Αθήνας. Πατήστε σε κάθε σημείο για να δείτε περισσότερες πληροφορίες.</p>
+  <label for="category">Φίλτρο Κατηγορίας:</label>
+<select id="category">
+  <option value="">Όλες οι κατηγορίες</option>
+  <option value="1">Κατοικία</option>
+  <option value="2">Εκκλησία</option>
+  <option value="3">Βιομηχανία</option>
+  <option value="4">Δημόσιο Κτίριο</option>
+</select>
 
   <div id="map"></div>
+  <!-- FontAwesome CSS (απαραίτητο!) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
+
 </div>
 
 <!-- Leaflet JS -->
@@ -130,29 +46,71 @@
     attribution: '© OpenStreetMap contributors'
   }).addTo(map);
 
-var points = [];
+  var allMarkers = [];
+  var points = [];
 
+  // Χρήση FontAwesome icons σε Leaflet DivIcon
+  const faIcons = {
+    1: 'fa-house',        // Κατοικία
+    2: 'fa-church',       // Εκκλησία
+    3: 'fa-industry',     // Βιομηχανία
+    4: 'fa-landmark'      // Δημόσιο Κτίριο
+  };
+
+  function createFAIcon(cat) {
+    const iconClass = faIcons[cat] || 'fa-map-marker-alt';
+    return L.divIcon({
+      className: 'fa-icon-marker',
+      html: `<i class="fas ${iconClass}" style="font-size: 24px; color: #67B7D1;"></i>`,
+      iconSize: [24, 24],
+      iconAnchor: [12, 24],
+      popupAnchor: [0, -24]
+    });
+  }
+
+  function showPoints(filteredPoints) {
+    allMarkers.forEach(marker => map.removeLayer(marker));
+    allMarkers = [];
+
+    filteredPoints.forEach(p => {
+      const marker = L.marker(p.coords, {
+        icon: createFAIcon(p.cat)
+      }).addTo(map)
+        .bindPopup(`
+          <div style="text-align:center; max-width:250px;">
+            <img src="${p.image}" alt="${p.name}" style="width:100%; height:auto; border-radius:6px; margin-bottom:6px;" />
+            <strong>${p.name}</strong><br>
+            <small>${p.info}</small><br>
+            <a href="${p.url}" target="_blank">Δείτε Περισσότερα...</a>
+          </div>
+        `);
+      allMarkers.push(marker);
+    });
+  }
+
+  // Φόρτωση JSON και σύνδεση dropdown
   fetch('monuments.json')
     .then(response => response.json())
     .then(data => {
-      points = data; 
-      points.forEach(p => {
-        L.marker(p.coords)
-          .addTo(map)
-          .bindPopup(`
-            <div style="text-align:center; max-width:250px;">
-              <img src="${p.image}" alt="${p.name}" style="width:100%; height:auto; border-radius:6px; margin-bottom:6px;" />
-              <strong>${p.name}</strong><br>
-              <small>${p.info }</small><br>
-              <a href="${p.url}" target="_blank">Δείτε Περισσότερα...</a>
-            </div>
-          `);
+      points = data;
+      showPoints(points); // αρχική εμφάνιση
+
+      document.getElementById('category').addEventListener('change', function () {
+        const selected = this.value;
+        if (selected === "") {
+          showPoints(points);
+        } else {
+          const filtered = points.filter(p => p.cat == selected);
+          showPoints(filtered);
+        }
       });
     })
     .catch(error => {
       console.error('Σφάλμα κατά τη φόρτωση του monuments.json:', error);
     });
 </script>
+
+
 
 </body>
 </html>
