@@ -14,11 +14,19 @@ const faIcons = {
   4: 'fa-landmark'      // Δημόσιο Κτίριο
 };
 
+const iconColors = {
+  1: '#67B7D1',
+  2: '#dcb786',
+  3: '#777373',
+  4: '#e36b6b'
+}
+
 function createFAIcon(cat) {
   const iconClass = faIcons[cat] || 'fa-map-marker-alt';
+  const iconColor = iconColors[cat]
   return L.divIcon({
     className: 'fa-icon-marker',
-    html: `<i class="fas ${iconClass}" style="font-size: 24px; color: #67B7D1;"></i>`,
+    html: `<i class="fas ${iconClass}" style="font-size: 24px; color: ${iconColor};"></i>`,
     iconSize: [24, 24],
     iconAnchor: [12, 24],
     popupAnchor: [0, -24]
