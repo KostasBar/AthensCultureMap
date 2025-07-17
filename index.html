@@ -1,116 +1,64 @@
 <!DOCTYPE html>
 <html lang="el">
-<head>
-  <meta charset="utf-8" />
-  <title>Πολιτιστικός Χάρτης Αθήνας</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8" />
+    <title>Πολιτιστικός Χάρτης Αθήνας</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Leaflet CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-  <link rel="stylesheet" href="./style.css">
-</head>
-<body>
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Πολιτιστικός Χάρτης Αθήνας</h1>
+    </header>
 
-<header>
-  <h1>Πολιτιστικός Χάρτης Αθήνας</h1>
-</header>
-
-<div class="container">
-  <h2>Σημεία Ενδιαφέροντος</h2>
-  <p>Παρακάτω εμφανίζονται σημαντικά πολιτιστικά σημεία στην πόλη της Αθήνας. Πατήστε σε κάθε σημείο για να δείτε περισσότερες πληροφορίες.</p>
+    <div class="container">
+      <h2>Σημεία Ενδιαφέροντος</h2>
+      <p>
+        Παρακάτω εμφανίζονται σημαντικά πολιτιστικά σημεία στην πόλη της Αθήνας.
+        Πατήστε σε κάθε σημείο για να δείτε περισσότερες πληροφορίες.
+      </p>
+      <div class="filter-bar">
   <label for="category">Φίλτρο Κατηγορίας:</label>
-<select id="category">
-  <option value="">Όλες οι κατηγορίες</option>
-  <option value="1">Κατοικία</option>
-  <option value="2">Εκκλησία</option>
-  <option value="3">Βιομηχανία</option>
-  <option value="4">Δημόσιο Κτίριο</option>
-</select>
+  <select
+    id="category"
+    class="form-select form-select-sm"
+    aria-label="Default select example"
+  >
 
-  <div id="map"></div>
-  <!-- FontAwesome CSS (απαραίτητο!) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
+          <option value="">Όλες οι κατηγορίες</option>
+          <option value="1">Κατοικία</option>
+          <option value="2">Εκκλησία</option>
+          <option value="3">Βιομηχανία</option>
+          <option value="4">Δημόσιο Κτίριο</option>
+        </select>
+      </div>
 
-</div>
-
-<!-- Leaflet JS -->
-<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-
-<script>
-  var map = L.map('map').setView([37.9838, 23.7275], 13);
-
-  L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-    attribution: '© OpenStreetMap contributors'
-  }).addTo(map);
-
-  var allMarkers = [];
-  var points = [];
-
-  // Χρήση FontAwesome icons σε Leaflet DivIcon
-  const faIcons = {
-    1: 'fa-house',        // Κατοικία
-    2: 'fa-church',       // Εκκλησία
-    3: 'fa-industry',     // Βιομηχανία
-    4: 'fa-landmark'      // Δημόσιο Κτίριο
-  };
-
-  function createFAIcon(cat) {
-    const iconClass = faIcons[cat] || 'fa-map-marker-alt';
-    return L.divIcon({
-      className: 'fa-icon-marker',
-      html: `<i class="fas ${iconClass}" style="font-size: 24px; color: #67B7D1;"></i>`,
-      iconSize: [24, 24],
-      iconAnchor: [12, 24],
-      popupAnchor: [0, -24]
-    });
-  }
-
-  function showPoints(filteredPoints) {
-    allMarkers.forEach(marker => map.removeLayer(marker));
-    allMarkers = [];
-
-    filteredPoints.forEach(p => {
-      const marker = L.marker(p.coords, {
-        icon: createFAIcon(p.cat)
-      }).addTo(map)
-        .bindPopup(`
-          <div style="text-align:center; max-width:250px;">
-            <img src="${p.image}" alt="${p.name}" style="width:100%; height:auto; border-radius:6px; margin-bottom:6px;" />
-            <strong>${p.name}</strong><br>
-            <small>${p.info}</small><br>
-            <a href="${p.url}" target="_blank">Δείτε Περισσότερα...</a>
-          </div>
-        `);
-      allMarkers.push(marker);
-    });
-  }
-
-  // Φόρτωση JSON και σύνδεση dropdown
-  fetch('monuments.json')
-    .then(response => response.json())
-    .then(data => {
-      points = data;
-      showPoints(points); // αρχική εμφάνιση
-
-      document.getElementById('category').addEventListener('change', function () {
-        const selected = this.value;
-        if (selected === "") {
-          showPoints(points);
-        } else {
-          const filtered = points.filter(p => p.cat == selected);
-          showPoints(filtered);
-        }
-      });
-    })
-    .catch(error => {
-      console.error('Σφάλμα κατά τη φόρτωση του monuments.json:', error);
-    });
-</script>
-
-
-
-</body>
+      <div id="map"></div>
+      <!-- FontAwesome CSS  -->
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        crossorigin="anonymous"
+      />
+      <!-- BootStrap css -->
+      <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+        crossorigin="anonymous"
+      />
+    </div>
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="./actions.js"></script>
+  </body>
 </html>
