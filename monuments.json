@@ -1,18 +1,9 @@
 [
   {
-    "name": "Έπαυλη του Φωκίωνος Νέγρη",
-    "map_url": "https://maps.app.goo.gl/ZgWHG2hnssFoAgdP8",
-    "coords": [38.07572170013535, 23.817392765713635],
-    "info": "Η νεοκλασική εξοχική κατοικία του Φωκίωνος Νέγρη στην Κηφισιά χτίστηκε γύρω στο 1900.",
-    "url": "https://www.instagram.com/p/DLk2K5Yo57X/?img_index=1",
-    "image":"./img/epauli-fokionos.png",
-    "cat" : 1
-  },
-  {
     "name": "Ι.Ν. του Αγίου Χαραλάμπους",
     "map_url": "https://maps.app.goo.gl/MxcjLZg3PUog7vmc6",
     "coords": [38.01699790225406, 23.73645532036364],
-    "info": "Ο Ι.Ν. του Αγίου Χαραλάμπους είναι χτισμένος στα τέλη της δεκαετίας του 1960 και αποτελεί ένα από τα ελάχιστα δείγματα μοντέρνας ναοδομίας στην Αθήνα.",
+    "info": "Εκκλησία του 1960 και ένα από τα ελάχιστα δείγματα μοντέρνας ναοδομίας στην Αθήνα.",
     "url": "https://www.instagram.com/p/DLaN6bDIe7h/?img_index=1",
     "image": "./img/agios-haralampos.png",
     "cat": 2
@@ -21,10 +12,10 @@
     "name": "74ο Δημοτικό Σχολείο Αθηνών",
     "map_url": "https://maps.app.goo.gl/w4ffqiBuajGkHZ4P7",
     "coords": [37.9738114217523, 23.729783944174237],
-    "info": "Το κτήριο του 74ου Δημοτικού Σχολείου Αθηνών κατασκευάστηκε την περίοδο 1875–1876 σε σχέδια του αρχιτέκτονα Παναγιώτη Κάλκου.",
+    "info": "Νεοκλασικό κτήριο του 1875–1876 σε σχέδια του αρχιτέκτονα Παναγιώτη Κάλκου.",
     "url": "https://www.instagram.com/p/DLSX-2tIigb/?img_index=1",
     "image":"./img/dimotiko-74.png",
-    "cat": 4
+    "cat": 5
   },
   {
     "name": "Βίλα Μαργαρίτα",
@@ -39,7 +30,7 @@
     "name": "Πολυκατοικία Λαναρά",
     "map_url": "https://maps.app.goo.gl/SAo86zsuXEShmHAb7",
     "coords": [38.00119143223418, 23.736232312014057],
-    "info": "Οικοδομήθηκε το 1938 σε σχέδια του πολιτικού μηχανικού Ιωάννη Ζολώτα.",
+    "info": "Κτήριο (πολυκατοικία) του 1938 σε σχέδια του πολιτικού μηχανικού Ιωάννη Ζολώτα. Ανήκει στην αρχιτεκτονική του μοντέρνου κινήματος, με «πουριστικές» και ρασιοναλιστικές κατευθύνσεις.",
     "url": "https://www.instagram.com/p/DLFkfL9oNv8/?img_index=1",
     "image":"./img/lanara.png",
     "cat": 1
@@ -48,10 +39,10 @@
     "name": "Παλαιό Χημείο του Πανεπιστημίου Αθηνών",
     "map_url": "https://maps.app.goo.gl/dCkojCF6jYCJ3wde8",
     "coords": [37.98347248341878, 23.734678700000003],
-    "info": "To κτήριο του Παλαιού Χημείου του ΕΚΠΑ θεμελιώθηκε το 1887 και εγκαινιάστηκε τον Ιανουάριο του 1890.",
+    "info": "Νεοκλασικό κτήριο του 1887. Σχεδιάστηκε από τον Ernst Ziller, με πρωτοβουλία του καθηγητή Αναστάσιου Χρηστομάνου (1841-1906).",
     "url": "https://www.instagram.com/p/DKnD1O-IwBI/?img_index=1",
     "image":"./img/palaio-xhmio.png",
-    "cat": 1
+    "cat": 5
   },
   {
     "name": "Ατμοηλεκτρικός Σταθμός (ΑΗΣ) Νέου Φαλήρου",
@@ -95,7 +86,7 @@
     "coords": [38.00101841266545, 23.737838828834846],
     "info": "Το κτήριο ολοκληρώθηκε το 1937 σε σχέδια του αρχιτέκτονα Αλέξανδρου Μεταξά.",
     "url": "https://www.instagram.com/p/DJWneLxobvE/?img_index=1",
-    "image":"./img/dimotiki-agora-kypselis.png",
+    "image":"./img/dimotiki-agora-kipselis.png",
     "cat": 4
   },
   {
@@ -156,9 +147,225 @@
     "name": "Αγγλικανική Εκκλησία Αγίου Παύλου",
     "map_url": "https://maps.app.goo.gl/qiRCqpJSnnzG4WAf7",
     "coords": [37.972316342371954, 23.7336815],
-    "info": "Πρόκειται για ένα σπάνιο δείγμα νεογοτθικού κτηρίου στην Αθήνα του 19ου αιώνα, το οποίο οικοδομήθηκε μεταξύ 1838 και 1843.",
+    "info": "Νεογοτθικός ναός που οικοδομήθηκε μεταξύ 1838 και 1843, σε σχέδια είτε του  Σταμάτη Κλεάνθη, είτε του Charles Cockerell, είτε (λιγότερο πιθανό) του Hans Christian Hansen.",
     "url": "https://www.instagram.com/p/DD9693zolSu/?img_index=1",
     "image":"./img/agios-paylos-agglikaniki.png",
+    "cat": 2
+  },
+  {
+    "name": "Κτίριο Δωρίδη στο Αστεροσκοπείο Αθηνών",
+    "map_url": "https://maps.app.goo.gl/Vz9WyHgDdStidFUv9",
+    "coords": [37.97232792144124, 23.718149942352657],
+    "info": "Κτήριο-θόλος που στεγάζει το ιστορικό τηλεσκόπιο Δωρίδη, το οποίο ήταν το μεγαλύτερο τηλεσκόπιο της Ελλάδας μέχρι το 1959.",
+    "url": "https://www.instagram.com/heritagent_/p/DFvi1okOyMR/?img_index=1",
+    "image":"./img/ktirio-doridi-asteroskopio.png",
+    "cat": 4
+  },
+  {
+    "name": "Μέγαρο Παλαιάς Βουλής",
+    "map_url": "https://maps.app.goo.gl/GPYiG6Bb5rWHU8AA6",
+    "coords": [37.97788572589778, 23.73288051530591],
+    "info": "Νεοκλασικό κτήριο του 1858 σε σχέδια του Γάλλου αρχιτέκτονα François Boulanger.",
+    "url": "https://www.instagram.com/heritagent_/p/C14PYPZoTeI/?img_index=1",
+    "image":"./img/megaro-palaias-voulis.png",
+    "cat": 4
+  },
+  {
+    "name": "Κανίνι Ασβεστοποιίας «ΑΙΜΟΣ»",
+    "map_url": "https://maps.app.goo.gl/kwhVZBeMzrvADGEA9",
+    "coords": [38.043977693618494, 23.673554461332294],
+    "info": "Το μνημείο κατασκευάστηκε το 1958 για λογαριασμό της ασβεστοποιίας «ΑΙΜΟΣ». Ανήκει στον τύπο Hoffmann, ονομασία που προήλθε από τον Γερμανό αρχιτέκτονα Friedrich Hoffmann.",
+    "url": "https://www.instagram.com/heritagent_/p/DJPIH82I3Cc/?img_index=1",
+    "image":"./img/aimos-kanini.png",
+    "cat": 3
+  },
+  {
+    "name": "Δραματική Σχολή Εθνικού Θεάτρου - Σχολείον Ειρήνης Παπά",
+    "map_url": "https://maps.app.goo.gl/UKRmxWGUQaQmpckQ7",
+    "coords": [37.95376476349175, 23.67095612826399],
+    "info": "Bιομηχανικό συγκρότημα που στέγαζε μέχρι τα μέσα του 20ου αι. την AΒΕΕ Χημικών και Φαρμακευτικών προϊόντων Sanitas.",
+    "url": "https://www.instagram.com/heritagent_/p/DJPIH82I3Cc/?img_index=1",
+    "image":"./img/sxolion-eirinis-papa.png",
+    "cat": 3
+  },
+  {
+    "name": "Ανώνυμη Ελληνική Εταιρεία Χημικών Προϊόντων και Λιπασμάτων",
+    "map_url": "https://maps.app.goo.gl/DeFGaWkax6FpyiTPA",
+    "coords": [37.94163204906545, 23.617236462322303],
+    "info": "Εταιρεία Χημικών Προϊόντων και Λιπασμάτων που λειτούργησε από το 1909 έως το 1993.",
+    "url": "https://www.instagram.com/heritagent_/p/C_fhUEnoRDV/?img_index=1",
+    "image":"./img/lipasmata.png",
+    "cat": 3
+  },
+  {
+    "name": "Εργοστάσιο Πορσελάνης",
+    "map_url": "https://maps.app.goo.gl/hU4NtRi89v5hsqwe8",
+    "coords": [38.086368418120514, 23.975328200061895],
+    "info": "Εργοστάσιο και κατοικία του Χαρίτωνα Τριανταφυλλόπουλου.  Τα κτίρια κατασκευάστηκαν το 1953 και χρησιμοποιήθηκαν ως το 1969, οπότε και εγκαταλείφθηκαν.",
+    "url": "https://www.instagram.com/heritagent_/p/C-uoQGfIk-R/?img_index=1",
+    "image":"./img/ergostasio-porselanis.png",
+    "cat": 3
+  },
+  {
+    "name": "Οικία Αθανάσιου Δεμίρη",
+    "map_url": "https://maps.app.goo.gl/SZN6MrF4t81rpTtb8",
+    "coords": [37.99063382207854, 23.725026],
+    "info": "Εκλεκτικιστικό κτήριο (πολυκατοικία) του 1928. Σχεδιάστηκε και κατοικήθηκε από τον αρχιτέκτονα Αθανάσιο Δεμίρη, ο οποίος το χρησιμοποίησε και ως γραφείο του.",
+    "url": "https://www.instagram.com/heritagent_/p/DMLbdR3owYp/?img_index=1",
+    "image":"./img/oikia-demiri.png",
+    "cat": 1
+  },
+  {
+    "name": "Eξοχική κατοικία του Φωκίωνος Νέγρη",
+    "map_url": "https://maps.app.goo.gl/8zeA2xwVSMN7whVb7",
+    "coords": [38.0756767004546, 23.817064539008022],
+    "info": "Διώροφο νεοκλασικό κτήριο (μονοκατοικία) του 1900, με συμμετρικά χαρακτηριστικά, εξωτερική μαρμάρινη σκάλα, λιθοδομή και τετράρριχτη στέγη απο γαλλικά κεραμίδια. ",
+    "url": "https://www.instagram.com/heritagent_/p/DLk2K5Yo57X/?img_index=1",
+    "image":"./img/epauli-fokionos.png",
+    "cat": 1
+  },
+  {
+    "name": "Πολυκατοικία στη Πατησίων με εντυπωσιακό διάκοσμο",
+    "map_url": "https://maps.app.goo.gl/JRW7hpyuEt8mVsCKA",
+    "coords": [37.986566071932785, 23.729847839004353],
+    "info": "Κτήριο (πολυκατοικία) του 1928, σε σχέδια του αρχιτέκτονα Ανδρέα Κριεζή. ",
+    "url": "https://www.instagram.com/heritagent_/p/DK96EAxo7T1/?img_index=2",
+    "image":"./img/polikatikia-diakosmos.png",
+    "cat": 1
+  },
+  {
+    "name": "Μεσοπολεμική Πολυκατοικία στο Κουκάκι.",
+    "map_url": "https://maps.app.goo.gl/dX3HD97caJHRn4bb8",
+    "coords": [37.96231382643962, 23.722733782386758],
+    "info": "Κτήριο (πολυκατοικία) του 1933/34, σε σχέδια του αρχιτέκτονα Π. Βρυζακη. ",
+    "url": "https://www.instagram.com/heritagent_/p/DGqOlpgI3eD/?img_index=1",
+    "image":"./img/mesopolemiki-koukaki.png",
+    "cat": 1
+  },
+  {
+    "name": "Μέγαρο Δουκίσσης Πλακεντίας",
+    "map_url": "https://maps.app.goo.gl/KTRswDh1bptLbS6r9",
+    "coords": [38.045572598365005, 23.870860800000003],
+    "info": "Κτήριο νεογοτθικής και νεοκλασικής αρχιτεκτονικής που ξεκίνησε να κατασκευάζεται το 1840 για να στεγάσει  τη θερινή κατοικία της Δούκισσας της Πλακεντίας (Sophie de Marbois).",
+    "url": "https://www.instagram.com/heritagent_/p/DF98OJmoMSG/?img_index=1",
+    "image":"./img/megaro-doukisis.png",
+    "cat": 1
+  },
+  {
+    "name": "Πρώην ξενοδοχείο Acropole Palace",
+    "map_url": "https://maps.app.goo.gl/C5FFSq42bJnVLgNJ9",
+    "coords": [37.989052796330256, 23.730238677354045],
+    "info": "Εξαώροφο κτήριο του 1925-1926, σε σχέδια του Σωτηρίου Ι. Μαγιάση.",
+    "url": "https://www.instagram.com/heritagent_/p/DFCtGNqo9MA/?img_index=1",
+    "image":"./img/acropole-palace.png",
+    "cat": 1
+  },
+  {
+    "name": "Πολυκατοικία στη Λεωφόρο Β. Σοφίας",
+    "map_url": "https://maps.app.goo.gl/G7nrGHz9aYg3sqe37",
+    "coords": [37.977222395804446, 23.74961527057958],
+    "info": "Πενταώροφο κτήριο  (πολυκατοικία) του  1927, σε σχέδια του αρχιτέκτονα Κώστα Κιτσίκη.",
+    "url": "https://www.instagram.com/heritagent_/p/DEPFZ93o-MP/?img_index=1",
+    "image":"./img/polikatikia-vasilisis-sofias.png",
+    "cat": 1
+  },
+  {
+    "name": "«Μικρή Πολυκατοικία» της οδού Διονυσίου Αρεοπαγίτου",
+    "map_url": "https://maps.app.goo.gl/uhtnEUo8rqD6mBjU6",
+    "coords": [37.9692573739473, 23.728130171165155],
+    "info": "Τριώροφο κτήριο (πολυκατοικία) του 1930, σε σχέδια του αρχιτέκτονα Βασίλειου Κουρεμένου.",
+    "url": "https://www.instagram.com/heritagent_/p/DEC9QW9ofns/?img_index=1",
+    "image":"./img/mikri-polikatikia.png",
+    "cat": 1
+  },
+  {
+    "name": "Κατοικία του Γιάννη Τσαρούχη",
+    "map_url": "https://maps.app.goo.gl/vs7EqZ5iPAKSzDrb9",
+    "coords": [38.063303194271896, 23.801501071165156],
+    "info": "Τριώροφο νεοκλασικό κτήριο με υπόγειο, κεραμοσκεπή στέγη με βυζαντινά κεραμίδια και κεντρικό άξονα συμμετρίας.",
+    "url": "https://www.instagram.com/heritagent_/p/DDzPHZDPqRZ/?img_index=1",
+    "image":"./img/katoikia-tsarouxi.png",
+    "cat": 1
+  },
+  {
+    "name": "Η πρώτη κατοικία του Καρόλου Κουν στην Αθήνα",
+    "map_url": "https://maps.app.goo.gl/F91avcn2bLyaSTRh7",
+    "coords": [37.98390505629368, 23.7336973],
+    "info": "Τριώροφο κτήριο του 1926, σε σχέδια του αρχιτέκτονα Ηλ. Κουρμουλή. ",
+    "url": "https://www.instagram.com/heritagent_/p/DDkSmDrICzk/?img_index=1",
+    "image":"./img/proti-katoikia-koun.png",
+    "cat": 1
+  },
+  {
+    "name": "Βίλα Καζούλη",
+    "map_url": "https://maps.app.goo.gl/nscPkSSnQAcQrnMR7",
+    "coords": [38.06761449327637, 23.810361671165154],
+    "info": "Κτήριο νεοκλασικισμού και αναγεννησιακής αρχιτεκτονικής. Ίσως είναι μοναδικό δείγμα Παλλαντιανής αρχιτεκτονικής στην ποικιλία των διατηρητέων σπιτιών της χώρας μας.",
+    "url": "https://www.instagram.com/heritagent_/p/DC4N5vHIfpE/?img_index=1",
+    "image":"./img/vila-kazouli.png",
+    "cat": 1
+  },
+  {
+    "name": "Μέγαρο Σλήμαν Μελά / Πρώην ΙΝΤΕΑΛ",
+    "map_url": "https://maps.app.goo.gl/6R3SQherNEBrXWibA",
+    "coords": [37.98202734719462, 23.731497638088047],
+    "info": "Κτήριο του 1890 σε σχέδια του αρχιτέκτονα Ερνέστου Τσίλλερ.",
+    "url": "https://www.instagram.com/heritagent_/p/DCofA8GIM4O/?img_index=1",
+    "image":"./img/megaro-sleman.png",
+    "cat": 1
+  },
+  {
+    "name": "Δρομοκαΐτειο",
+    "map_url": "https://maps.app.goo.gl/7wY9bDRdPyBKxSGn9",
+    "coords": [38.00051760875866, 23.6626032],
+    "info": "Νεοκλασικό κτήριο του 1887, το οποίο λειτούργησε ως νοσκοκομείο με 110 κλίνες, χάρη στη δωρεά του Χιώτη επιχειρηματία Ζωρζή Δρομοκαΐτη.",
+    "url": "https://www.instagram.com/heritagent_/p/DIMM1U4o5B2/?img_index=1",
+    "image":"./img/dromokaitio.png",
+    "cat": 7
+  },
+  {
+    "name": "Μνημείο Θυμάτων στο Νέο Βουτζά",
+    "map_url": "https://maps.app.goo.gl/8WhJDuSdbmF4j3vb9",
+    "coords": [38.040840798918026, 23.979587542330307],
+    "info": "Το έργο του γλύπτη Κώστα Ανανίδα φιλοτεχνήθηκε το 2020 ως μνημείο αφιερωμένο στα θύματα της φονικής πυρκαγιάς της 23ης Ιουλίου 2018.",
+    "url": "https://www.instagram.com/heritagent_/p/DMgMSlMoZTP/?img_index=1",
+    "image":"./img//mnimio-thimaton-neos-voytzas.png",
+    "cat": 6
+  },
+  {
+    "name": "Ι.Ν. Αγίων Κωνσταντίνου και Ελένης, Γλυφάδα",
+    "map_url": "https://maps.app.goo.gl/CwVAdnfMeXLhMPy39",
+    "coords": [37.864893220046746, 23.745505355825753],
+    "info": "Εκκλησία του 1935, σε σχέδια του αρχιτέκτονα Γεωργίου Δραγαζίκη στον τύπο του σταυροειδούς ναού με Rotonda.",
+    "url": "https://www.instagram.com/heritagent_/p/DI9lvhZIsTP/?img_index=1",
+    "image":"./img/agios-konnos-eleni-glyfada.png",
+    "cat": 2
+  },
+  {
+    "name": "Ι.Ν. Αγίου Ιωάννη της Κολώνας",
+    "map_url": "https://maps.app.goo.gl/2p8Rxa1NJcMa2qAG6",
+    "coords": [37.98077664498203, 23.724554319296985],
+    "info": "Εκκλησία του 18ου ή 19ου αι. με κίονα κορινθιακού ρυθμού, ο οποίος λέγεται πως προήλθε από κάποιο κοντινό Ιερό του Ασκληπιού.",
+    "url": "https://www.instagram.com/heritagent_/p/DEhowu5IYVv/?img_index=1",
+    "image":"./img/agios-ioanis-kolonas.png",
+    "cat": 2
+  },
+  {
+    "name": "Αρμενική Ορθόδοξη Εκκλησία",
+    "map_url": "https://maps.app.goo.gl/NJxVrXqGQ7CcJnKQA",
+    "coords": [37.97942958405687, 23.7218655423303],
+    "info": "Eκκλησία με πυραμοειδές σχήμα, η οποία χτίστηκε το 1935 από τους Αρμένιους πρόσφυγες της Αθήνας.",
+    "url": "https://www.instagram.com/heritagent_/p/C4DmRYfIjQ6/?img_index=1",
+    "image":"./img/armeniki-orthodoxi-ekklisia.png",
+    "cat": 2
+  },
+  {
+    "name": "Καθολική Εκκλησία του Αγίου Λούκα",
+    "map_url": "https://maps.app.goo.gl/JhkBmW4sXkqRwDh59",
+    "coords": [38.062217032945824, 23.775220213495448],
+    "info": "Νεογοτθικός ναός του 1845, ο οποίος χτίστηκε για να καλύψει τις θρησκευτικές ανάγκες των πρώτων Βαυαρών κατοίκων της νεοσύστατης πρωτεύουσας.",
+    "url": "https://www.instagram.com/heritagent_/p/C3us-y6IAgv/?img_index=1",
+    "image":"./img/katholiki-agiou-louka.png",
     "cat": 2
   }
 ]

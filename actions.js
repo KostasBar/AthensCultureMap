@@ -8,25 +8,33 @@ var allMarkers = [];
 var points = [];
 
 const faIcons = {
-  1: 'fa-house',        // Κατοικία
-  2: 'fa-church',       // Εκκλησία
-  3: 'fa-industry',     // Βιομηχανία
-  4: 'fa-landmark'      // Δημόσιο Κτίριο
+  1: 'fa-house',         // Κατοικίες και Ιστορικά Κτήρια
+  2: 'fa-church',        // Θρησκευτικά Μνημεία
+  3: 'fa-industry',      // Βιομηχανικά Κτήρια
+  4: 'fa-landmark',      // Δημόσια Κτήρια
+  5: 'fa-graduation-cap',// Εκπαιδευτικά Ιδρύματα
+  6: 'fa-monument',      // Τόποι Μνήμης
+  7: 'fa-briefcase-medical' // Δομές Υγείας
 };
 
+
 const iconColors = {
-  1: '#67B7D1',
-  2: '#dcb786',
-  3: '#777373',
-  4: '#e36b6b'
-}
+  1: '#67B7D1', // Κατοικίες και Ιστορικά Κτήρια
+  2: '#dcb786', // Θρησκευτικά Μνημεία
+  3: '#777373', // Βιομηχανικά Κτήρια
+  4: '#e36b6b', // Δημόσια Κτήρια
+  5: '#9a86d3', // Εκπαιδευτικά Ιδρύματα
+  6: '#7a7a52', // Τόποι Μνήμης
+  7: '#4cb2a2'  // Δομές Υγείας
+};
+
 
 function createFAIcon(cat) {
   const iconClass = faIcons[cat] || 'fa-map-marker-alt';
   const iconColor = iconColors[cat]
   return L.divIcon({
     className: 'fa-icon-marker',
-    html: `<i class="fas ${iconClass}" style="font-size: 24px; color: ${iconColor};"></i>`,
+    html: `<i class="fas ${iconClass}" style="font-size: 22px; color: ${iconColor};"></i>`,
     iconSize: [24, 24],
     iconAnchor: [12, 24],
     popupAnchor: [0, -24]
