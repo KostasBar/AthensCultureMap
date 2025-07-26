@@ -30,12 +30,15 @@
 ---
 
 ## 📌 Map Categories
-| Code     | Category |
-| -------- | ------- |
-| 1        | Residential    |
-| 2        | Church     |
-| 3        | Industrial    |
-| 4        | Public Building    |
+| Code | Category                          |
+|------|-----------------------------------|
+| 1    | Residential & Historic Buildings  |
+| 2    | Religious Monuments               |
+| 3    | Industrial Buildings              |
+| 4    | Public Landmarks                  |
+| 5    | Educational Institutions          |
+| 6    | Memorial Sites                    |
+| 7    | Healthcare Facilities             |
 
 You can filter them using the dropdown selector in the UI.
 

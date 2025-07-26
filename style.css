@@ -1,47 +1,104 @@
+/* Color & typography variables */
 :root {
   --main-color: #111;
   --secondary-color: #555;
   --accent-color: #1a73e8;
   --bg-color: #fafafa;
+
+  /* Typographic scale */
+  --fs-h1: 2.5rem;
+  --fs-h2: 1.75rem;
+  --fs-body: 1rem;
+  --lh-body: 1.6;
 }
 
+/* Global resets and body */
+* {
+  box-sizing: border-box;
+}
 body {
   margin: 0;
-  font-family: "Inter", sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
   background-color: var(--bg-color);
   color: var(--main-color);
-  line-height: 1.6;
 }
 
+/* Header */
 header {
   background-color: #fff;
   padding: 2rem 1rem 1rem;
   border-bottom: 1px solid #e0e0e0;
   text-align: center;
 }
-
 header h1 {
-  font-size: 2rem;
   margin: 0;
+  font-size: var(--fs-h1);
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
 }
 
+/* Navigation (if added later) */
 nav {
   margin-top: 0.5rem;
 }
-
 nav a {
   text-decoration: none;
   color: var(--secondary-color);
   margin: 0 0.75rem;
   font-weight: 500;
+  font-family: 'Roboto', sans-serif;
 }
 
+/* Container */
 .container {
   max-width: 1200px;
   margin: 2rem auto;
   padding: 0 1rem;
 }
 
+/* Section headings */
+h2, h3 {
+  margin-top: 2rem;
+  font-size: var(--fs-h2);
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+/* Paragraphs */
+p {
+  margin-top: 1rem;
+}
+
+/* Filter bar */
+.filter-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin: 1rem 0;
+}
+.filter-bar label {
+  white-space: nowrap;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+}
+.filter-bar select {
+  flex: 1 1 auto;
+  max-width: 300px;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Map container */
 #map {
   height: 700px;
   width: 100%;
@@ -49,59 +106,59 @@ nav a {
   border-radius: 10px;
 }
 
+/* Leaflet popups */
 .leaflet-popup-content-wrapper {
   border-radius: 10px;
   padding: 10px;
+  max-height: 350px;
+  overflow-y: auto;
 }
-
 .leaflet-popup-content {
   font-size: 0.95rem;
   color: var(--main-color);
 }
 
-.leaflet-popup-content-wrapper {
-  max-height: 350px;
-  overflow-y: auto;
-}
-
+/* “Read more” links */
 a.more-link {
   display: inline-block;
   margin-top: 5px;
   text-decoration: none;
   color: var(--accent-color);
   font-weight: 500;
+  font-family: 'Roboto', sans-serif;
 }
-
 a.more-link:hover {
   text-decoration: underline;
 }
 
+/* Site credit at bottom-right */
+.site-credit {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  font-size: 0.875rem;
+  font-family: 'Roboto', sans-serif;
+  background: rgba(255,255,255,0.8);
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+.site-credit a {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+.site-credit a:hover {
+  color: var(--accent-color);
+}
+
+
+/* Responsive tweaks */
 @media (max-width: 600px) {
   header h1 {
     font-size: 1.5rem;
   }
-
   nav a {
     display: block;
     margin: 0.3rem 0;
   }
-}
-
-.filter-bar {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  max-width: 100%;
-  margin: 1rem 0;
-  flex-wrap: wrap;
-}
-
-.filter-bar label {
-  white-space: nowrap;
-  font-weight: 500;
-}
-
-.filter-bar select {
-  max-width: 300px;
-  flex: 1 1 auto;
 }
