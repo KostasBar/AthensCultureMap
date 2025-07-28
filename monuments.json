@@ -6,7 +6,7 @@
     "info": "Εκκλησία του 1960 και ένα από τα ελάχιστα δείγματα μοντέρνας ναοδομίας στην Αθήνα.",
     "url": "https://www.instagram.com/p/DLaN6bDIe7h/?img_index=1",
     "image": "./img/agios-haralampos.png",
-    "cat": 2
+    "cat": [2]
   },
   {
     "name": "74ο Δημοτικό Σχολείο Αθηνών",
@@ -15,7 +15,7 @@
     "info": "Νεοκλασικό κτήριο του 1875–1876 σε σχέδια του αρχιτέκτονα Παναγιώτη Κάλκου.",
     "url": "https://www.instagram.com/p/DLSX-2tIigb/?img_index=1",
     "image":"./img/dimotiko-74.png",
-    "cat": 5
+    "cat": [5]
   },
   {
     "name": "Βίλα Μαργαρίτα",
@@ -24,7 +24,7 @@
     "info": "Στη συμβολή των λεωφόρων Μεσογείων & Βασιλίσσης Σοφίας, βρισκόταν ένα μέγαρο νεογοτθικης αρχιτεκτονικής, το οποίο κτίστηκε γύρω στο 1900.",
     "url": "https://www.instagram.com/p/DLKEvN1ooeQ/?img_index=1",
     "image":"./img/vila-margarita.png",
-    "cat": 1
+    "cat": [1]
   },
   {
     "name": "Πολυκατοικία Λαναρά",
@@ -33,7 +33,7 @@
     "info": "Κτήριο (πολυκατοικία) του 1938 σε σχέδια του πολιτικού μηχανικού Ιωάννη Ζολώτα. Ανήκει στην αρχιτεκτονική του μοντέρνου κινήματος, με «πουριστικές» και ρασιοναλιστικές κατευθύνσεις.",
     "url": "https://www.instagram.com/p/DLFkfL9oNv8/?img_index=1",
     "image":"./img/lanara.png",
-    "cat": 1
+    "cat": [1]
   },
   {
     "name": "Παλαιό Χημείο του Πανεπιστημίου Αθηνών",
@@ -42,7 +42,7 @@
     "info": "Νεοκλασικό κτήριο του 1887. Σχεδιάστηκε από τον Ernst Ziller, με πρωτοβουλία του καθηγητή Αναστάσιου Χρηστομάνου (1841-1906).",
     "url": "https://www.instagram.com/p/DKnD1O-IwBI/?img_index=1",
     "image":"./img/palaio-xhmio.png",
-    "cat": 5
+    "cat": [5]
   },
   {
     "name": "Ατμοηλεκτρικός Σταθμός (ΑΗΣ) Νέου Φαλήρου",
@@ -51,7 +51,7 @@
     "info": "Ο ΑΗΣ τέθηκε σε λειτουργία το 1903 από την Ελληνική Ηλεκτρική Εταιρεία (ΕΗΕ) και στήριξε τον εκσυγχρονισμό της πρωτεύουσας, τροφοδοτώντας τροχιόδρομους, τον σιδηρόδρομο κ.α.",
     "url": "https://www.instagram.com/p/DKJsvauIKJE/?img_index=1",
     "image":"./img/atmoilektrikos.png",
-    "cat": 3
+    "cat": [3]
   },
   {
     "name": "Πιλοποιείο Πουλοπούλου (ΠΙΛ-ΠΟΥΛ)",
@@ -60,7 +60,7 @@
     "info": "Το Πιλοποιείο Πουλοπούλου ιδρύθηκε το 1886 από τον Ηλία Πουλόπουλο (1850–1930) και είναι το παλαιότερο πιλοποιείο της πόλης.",
     "url": "https://www.instagram.com/p/DJ9IbMFITrh/?img_index=1",
     "image": "./img/pil-poul.png",
-    "cat": 3
+    "cat": [3]
   },
   {
     "name": "Το σπίτι με τις Καρυάτιδες",
@@ -69,7 +69,7 @@
     "info": "Ιδιοκτήτης του σπιτιού ήταν ο Αιγινίτης γλύπτης Ιωάννης Καρακατσάνης. Χρονολογείται στο 1911 και η μορφή του είναι πίστη στα πρότυπα του αθηναϊκού νεοκλασικισμού και της λαϊκής αρχιτεκτονικής της περιοχής.",
     "url": "https://www.instagram.com/p/DJ1fPaHIUKv/?img_index=1",
     "image": "./img/kariatides.png",
-    "cat": 1
+    "cat": [1]
   },
   {
     "name": "Πλατεία Αιγύπτου & Πολυκατοικία Σαββίδη",
@@ -78,7 +78,7 @@
     "info": "Πρόκειται για κτήριο του 1934, σε σχέδια του αρχιτέκτονα Νικόλαου Νικολαΐδη (1892–1967).",
     "url": "https://www.instagram.com/p/DJbiCjOokIA/?img_index=1",
     "image":"./img/savidi-aigyptou.png",
-    "cat": 1
+    "cat": [1]
   },
   {
     "name": "Δημοτική Αγορά Κυψέλης",
@@ -87,7 +87,7 @@
     "info": "Το κτήριο ολοκληρώθηκε το 1937 σε σχέδια του αρχιτέκτονα Αλέξανδρου Μεταξά.",
     "url": "https://www.instagram.com/p/DJWneLxobvE/?img_index=1",
     "image":"./img/dimotiki-agora-kipselis.png",
-    "cat": 4
+    "cat": [4]
   },
   {
     "name": "Κοραή 4",
@@ -96,7 +96,7 @@
     "info": "Το Μέγαρο της Εθνικής Ασφαλιστικής οικοδομήθηκε μεταξύ 1934 και 1938. Τον Οκτώβριο του 1941, το κτήριο πέρασε στη γερμανική στρατιωτική διοίκηση (Kommandatur), η οποία μετέτρεψε τα υπόγεια του κτηρίου σε χώρους κράτησης, ανακρίσεων και βασανιστηρίων.",
     "url": "https://www.instagram.com/p/DJCJUXioTCk/?img_index=1",
     "image":"./img/korai-4.png",
-    "cat": 4
+    "cat": [4]
   },
   {
     "name": "ΠΛΥΦΑ",
@@ -105,7 +105,7 @@
     "info": "Το συγκρότημα των πρώην Πλεκτηρίων-Υφαντηρίων Αθηνών (ΠΛ.ΥΦ.Α) χτίστηκε στις αρχές της δεκαετίας του 1930 (μάλλον το 1936).",
     "url": "https://www.instagram.com/p/DIt5-ENopST/?img_index=1",
     "image":"./img/plyfa.png",
-    "cat": 3
+    "cat": [3]
   },
   {
     "name": "Πολυκατοικία Κανάκη-Τόμπρου",
@@ -114,7 +114,7 @@
     "info": "Το κτήριο οικοδομήθηκε το 1935 και αποτελεί μια από τις πρώτες πολυκατοικίες που ανεγέρθηκαν επί της Φωκίωνος Νέγρη, σε σχέδια του αρχιτέκτονα Μιχάλη Κανάκη.",
     "url": "https://www.instagram.com/p/DHDq8L2oXwh/?img_index=1",
     "image": "./img/kanaki-tomprou.png",
-    "cat":1
+    "cat":[1]
   },
   {
     "name": "Κλωστοϋφαντουργία «Μουζάκη»",
@@ -123,7 +123,7 @@
     "info": "Η κλωστοϋφαντουργία «Μουζάκη», που έμεινε γνωστή στο ευρύ κοινό με τις «κλωστές Πεταλούδα» ξεκίνησαν το 1944.",
     "url": "https://www.instagram.com/p/DG5eZ18owfs/?img_index=1",
     "image":"./img/mouzaki.png",
-    "cat": 3
+    "cat": [3]
   },
   {
     "name": "Οικία Ράλλη & 1η Έδρα της ΕΦΕΕ",
@@ -132,7 +132,7 @@
     "info": "Οικοδομήθηκε το 1838 σύμφωνα με τα σχέδια του αρχιτέκτονα Σταμάτη Κλεάνθη.",
     "url": "https://www.instagram.com/p/DFZ7LNPIoAQ/?img_index=1",
     "image":"./img/efee.png",
-    "cat": 4
+    "cat": [4]
   },
   {
     "name": "Ξενοδοχείο Μπάγκειον",
@@ -141,7 +141,7 @@
     "info": "Χτίστηκε από τον Ιωάννη Μπάγκα (1890-94) και σχεδιάστηκε από τον αρχιτέκτονα Ernst Ziller.",
     "url": "https://www.instagram.com/p/DEuRE_xIuMD/?img_index=1",
     "image": "./img/mpagkeion.png",
-    "cat": 4
+    "cat": [4]
   },
   {
     "name": "Αγγλικανική Εκκλησία Αγίου Παύλου",
@@ -150,7 +150,7 @@
     "info": "Νεογοτθικός ναός που οικοδομήθηκε μεταξύ 1838 και 1843, σε σχέδια είτε του  Σταμάτη Κλεάνθη, είτε του Charles Cockerell, είτε (λιγότερο πιθανό) του Hans Christian Hansen.",
     "url": "https://www.instagram.com/p/DD9693zolSu/?img_index=1",
     "image":"./img/agios-paylos-agglikaniki.png",
-    "cat": 2
+    "cat": [2]
   },
   {
     "name": "Κτίριο Δωρίδη στο Αστεροσκοπείο Αθηνών",
@@ -159,7 +159,7 @@
     "info": "Κτήριο-θόλος που στεγάζει το ιστορικό τηλεσκόπιο Δωρίδη, το οποίο ήταν το μεγαλύτερο τηλεσκόπιο της Ελλάδας μέχρι το 1959.",
     "url": "https://www.instagram.com/heritagent_/p/DFvi1okOyMR/?img_index=1",
     "image":"./img/ktirio-doridi-asteroskopio.png",
-    "cat": 4
+    "cat": [4]
   },
   {
     "name": "Μέγαρο Παλαιάς Βουλής",
@@ -168,7 +168,7 @@
     "info": "Νεοκλασικό κτήριο του 1858 σε σχέδια του Γάλλου αρχιτέκτονα François Boulanger.",
     "url": "https://www.instagram.com/heritagent_/p/C14PYPZoTeI/?img_index=1",
     "image":"./img/megaro-palaias-voulis.png",
-    "cat": 4
+    "cat": [4]
   },
   {
     "name": "Κανίνι Ασβεστοποιίας «ΑΙΜΟΣ»",
@@ -177,7 +177,7 @@
     "info": "Το μνημείο κατασκευάστηκε το 1958 για λογαριασμό της ασβεστοποιίας «ΑΙΜΟΣ». Ανήκει στον τύπο Hoffmann, ονομασία που προήλθε από τον Γερμανό αρχιτέκτονα Friedrich Hoffmann.",
     "url": "https://www.instagram.com/heritagent_/p/DJPIH82I3Cc/?img_index=1",
     "image":"./img/aimos-kanini.png",
-    "cat": 3
+    "cat": [3]
   },
   {
     "name": "Δραματική Σχολή Εθνικού Θεάτρου - Σχολείον Ειρήνης Παπά",
@@ -186,7 +186,7 @@
     "info": "Bιομηχανικό συγκρότημα που στέγαζε μέχρι τα μέσα του 20ου αι. την AΒΕΕ Χημικών και Φαρμακευτικών προϊόντων Sanitas.",
     "url": "https://www.instagram.com/heritagent_/p/DJPIH82I3Cc/?img_index=1",
     "image":"./img/sxolion-eirinis-papa.png",
-    "cat": 3
+    "cat": [3]
   },
   {
     "name": "Ανώνυμη Ελληνική Εταιρεία Χημικών Προϊόντων και Λιπασμάτων",
@@ -195,7 +195,7 @@
     "info": "Εταιρεία Χημικών Προϊόντων και Λιπασμάτων που λειτούργησε από το 1909 έως το 1993.",
     "url": "https://www.instagram.com/heritagent_/p/C_fhUEnoRDV/?img_index=1",
     "image":"./img/lipasmata.png",
-    "cat": 3
+    "cat": [3]
   },
   {
     "name": "Εργοστάσιο Πορσελάνης",
@@ -204,7 +204,7 @@
     "info": "Εργοστάσιο και κατοικία του Χαρίτωνα Τριανταφυλλόπουλου.  Τα κτίρια κατασκευάστηκαν το 1953 και χρησιμοποιήθηκαν ως το 1969, οπότε και εγκαταλείφθηκαν.",
     "url": "https://www.instagram.com/heritagent_/p/C-uoQGfIk-R/?img_index=1",
     "image":"./img/ergostasio-porselanis.png",
-    "cat": 3
+    "cat": [3]
   },
   {
     "name": "Οικία Αθανάσιου Δεμίρη",
@@ -213,7 +213,7 @@
     "info": "Εκλεκτικιστικό κτήριο (πολυκατοικία) του 1928. Σχεδιάστηκε και κατοικήθηκε από τον αρχιτέκτονα Αθανάσιο Δεμίρη, ο οποίος το χρησιμοποίησε και ως γραφείο του.",
     "url": "https://www.instagram.com/heritagent_/p/DMLbdR3owYp/?img_index=1",
     "image":"./img/oikia-demiri.png",
-    "cat": 1
+    "cat": [1]
   },
   {
     "name": "Eξοχική κατοικία του Φωκίωνος Νέγρη",
@@ -222,7 +222,7 @@
     "info": "Διώροφο νεοκλασικό κτήριο (μονοκατοικία) του 1900, με συμμετρικά χαρακτηριστικά, εξωτερική μαρμάρινη σκάλα, λιθοδομή και τετράρριχτη στέγη απο γαλλικά κεραμίδια. ",
     "url": "https://www.instagram.com/heritagent_/p/DLk2K5Yo57X/?img_index=1",
     "image":"./img/epauli-fokionos.png",
-    "cat": 1
+    "cat": [1]
   },
   {
     "name": "Πολυκατοικία στη Πατησίων με εντυπωσιακό διάκοσμο",
@@ -231,7 +231,7 @@
     "info": "Κτήριο (πολυκατοικία) του 1928, σε σχέδια του αρχιτέκτονα Ανδρέα Κριεζή. ",
     "url": "https://www.instagram.com/heritagent_/p/DK96EAxo7T1/?img_index=2",
     "image":"./img/polikatikia-diakosmos.png",
-    "cat": 1
+    "cat": [1]
   },
   {
     "name": "Μεσοπολεμική Πολυκατοικία στο Κουκάκι.",
@@ -240,7 +240,7 @@
     "info": "Κτήριο (πολυκατοικία) του 1933/34, σε σχέδια του αρχιτέκτονα Π. Βρυζακη. ",
     "url": "https://www.instagram.com/heritagent_/p/DGqOlpgI3eD/?img_index=1",
     "image":"./img/mesopolemiki-koukaki.png",
-    "cat": 1
+    "cat": [1]
   },
   {
     "name": "Μέγαρο Δουκίσσης Πλακεντίας",
@@ -249,7 +249,7 @@
     "info": "Κτήριο νεογοτθικής και νεοκλασικής αρχιτεκτονικής που ξεκίνησε να κατασκευάζεται το 1840 για να στεγάσει  τη θερινή κατοικία της Δούκισσας της Πλακεντίας (Sophie de Marbois).",
     "url": "https://www.instagram.com/heritagent_/p/DF98OJmoMSG/?img_index=1",
     "image":"./img/megaro-doukisis.png",
-    "cat": 1
+    "cat": [1]
   },
   {
     "name": "Πρώην ξενοδοχείο Acropole Palace",
@@ -258,7 +258,7 @@
     "info": "Εξαώροφο κτήριο του 1925-1926, σε σχέδια του Σωτηρίου Ι. Μαγιάση.",
     "url": "https://www.instagram.com/heritagent_/p/DFCtGNqo9MA/?img_index=1",
     "image":"./img/acropole-palace.png",
-    "cat": 1
+    "cat": [1]
   },
   {
     "name": "Πολυκατοικία στη Λεωφόρο Β. Σοφίας",
@@ -267,7 +267,7 @@
     "info": "Πενταώροφο κτήριο  (πολυκατοικία) του  1927, σε σχέδια του αρχιτέκτονα Κώστα Κιτσίκη.",
     "url": "https://www.instagram.com/heritagent_/p/DEPFZ93o-MP/?img_index=1",
     "image":"./img/polikatikia-vasilisis-sofias.png",
-    "cat": 1
+    "cat": [1]
   },
   {
     "name": "«Μικρή Πολυκατοικία» της οδού Διονυσίου Αρεοπαγίτου",
@@ -276,7 +276,7 @@
     "info": "Τριώροφο κτήριο (πολυκατοικία) του 1930, σε σχέδια του αρχιτέκτονα Βασίλειου Κουρεμένου.",
     "url": "https://www.instagram.com/heritagent_/p/DEC9QW9ofns/?img_index=1",
     "image":"./img/mikri-polikatikia.png",
-    "cat": 1
+    "cat": [1]
   },
   {
     "name": "Κατοικία του Γιάννη Τσαρούχη",
@@ -285,7 +285,7 @@
     "info": "Τριώροφο νεοκλασικό κτήριο με υπόγειο, κεραμοσκεπή στέγη με βυζαντινά κεραμίδια και κεντρικό άξονα συμμετρίας.",
     "url": "https://www.instagram.com/heritagent_/p/DDzPHZDPqRZ/?img_index=1",
     "image":"./img/katoikia-tsarouxi.png",
-    "cat": 1
+    "cat": [1]
   },
   {
     "name": "Η πρώτη κατοικία του Καρόλου Κουν στην Αθήνα",
@@ -294,7 +294,7 @@
     "info": "Τριώροφο κτήριο του 1926, σε σχέδια του αρχιτέκτονα Ηλ. Κουρμουλή. ",
     "url": "https://www.instagram.com/heritagent_/p/DDkSmDrICzk/?img_index=1",
     "image":"./img/proti-katoikia-koun.png",
-    "cat": 1
+    "cat": [1]
   },
   {
     "name": "Βίλα Καζούλη",
@@ -303,7 +303,7 @@
     "info": "Κτήριο νεοκλασικισμού και αναγεννησιακής αρχιτεκτονικής. Ίσως είναι μοναδικό δείγμα Παλλαντιανής αρχιτεκτονικής στην ποικιλία των διατηρητέων σπιτιών της χώρας μας.",
     "url": "https://www.instagram.com/heritagent_/p/DC4N5vHIfpE/?img_index=1",
     "image":"./img/vila-kazouli.png",
-    "cat": 1
+    "cat": [1]
   },
   {
     "name": "Μέγαρο Σλήμαν Μελά / Πρώην ΙΝΤΕΑΛ",
@@ -312,7 +312,7 @@
     "info": "Κτήριο του 1890 σε σχέδια του αρχιτέκτονα Ερνέστου Τσίλλερ.",
     "url": "https://www.instagram.com/heritagent_/p/DCofA8GIM4O/?img_index=1",
     "image":"./img/megaro-sleman.png",
-    "cat": 1
+    "cat": [1]
   },
   {
     "name": "Δρομοκαΐτειο",
@@ -321,7 +321,7 @@
     "info": "Νεοκλασικό κτήριο του 1887, το οποίο λειτούργησε ως νοσκοκομείο με 110 κλίνες, χάρη στη δωρεά του Χιώτη επιχειρηματία Ζωρζή Δρομοκαΐτη.",
     "url": "https://www.instagram.com/heritagent_/p/DIMM1U4o5B2/?img_index=1",
     "image":"./img/dromokaitio.png",
-    "cat": 7
+    "cat": [7]
   },
   {
     "name": "Μνημείο Θυμάτων στο Νέο Βουτζά",
@@ -330,7 +330,7 @@
     "info": "Το έργο του γλύπτη Κώστα Ανανίδα φιλοτεχνήθηκε το 2020 ως μνημείο αφιερωμένο στα θύματα της φονικής πυρκαγιάς της 23ης Ιουλίου 2018.",
     "url": "https://www.instagram.com/heritagent_/p/DMgMSlMoZTP/?img_index=1",
     "image":"./img//mnimio-thimaton-neos-voytzas.png",
-    "cat": 6
+    "cat": [6]
   },
   {
     "name": "Ι.Ν. Αγίων Κωνσταντίνου και Ελένης, Γλυφάδα",
@@ -339,7 +339,7 @@
     "info": "Εκκλησία του 1935, σε σχέδια του αρχιτέκτονα Γεωργίου Δραγαζίκη στον τύπο του σταυροειδούς ναού με Rotonda.",
     "url": "https://www.instagram.com/heritagent_/p/DI9lvhZIsTP/?img_index=1",
     "image":"./img/agios-konnos-eleni-glyfada.png",
-    "cat": 2
+    "cat": [2]
   },
   {
     "name": "Ι.Ν. Αγίου Ιωάννη της Κολώνας",
@@ -348,7 +348,7 @@
     "info": "Εκκλησία του 18ου ή 19ου αι. με κίονα κορινθιακού ρυθμού, ο οποίος λέγεται πως προήλθε από κάποιο κοντινό Ιερό του Ασκληπιού.",
     "url": "https://www.instagram.com/heritagent_/p/DEhowu5IYVv/?img_index=1",
     "image":"./img/agios-ioanis-kolonas.png",
-    "cat": 2
+    "cat": [2]
   },
   {
     "name": "Αρμενική Ορθόδοξη Εκκλησία",
@@ -357,7 +357,7 @@
     "info": "Eκκλησία με πυραμοειδές σχήμα, η οποία χτίστηκε το 1935 από τους Αρμένιους πρόσφυγες της Αθήνας.",
     "url": "https://www.instagram.com/heritagent_/p/C4DmRYfIjQ6/?img_index=1",
     "image":"./img/armeniki-orthodoxi-ekklisia.png",
-    "cat": 2
+    "cat": [2]
   },
   {
     "name": "Καθολική Εκκλησία του Αγίου Λούκα",
@@ -366,6 +366,69 @@
     "info": "Νεογοτθικός ναός του 1845, ο οποίος χτίστηκε για να καλύψει τις θρησκευτικές ανάγκες των πρώτων Βαυαρών κατοίκων της νεοσύστατης πρωτεύουσας.",
     "url": "https://www.instagram.com/heritagent_/p/C3us-y6IAgv/?img_index=1",
     "image":"./img/katholiki-agiou-louka.png",
-    "cat": 2
+    "cat": [2]
+  },
+  {
+    "name": "Εργοστάσιο Βαμβακουργίας",
+    "map_url": "https://maps.app.goo.gl/xchEr3jS7aDBEYwz9",
+    "coords": [38.03499627034751, 23.74843861442225],
+    "info": "Το άλλοτε εργοστάσιο Βαμβακουργίας «Κλωστήρια Αττικής ΑΕ» χρονολογείται στις αρχές της δεκαετίας του ‘30, παρότι η τελική του εικόνα αποτελεί το γενόμενο δυο χρονικών φάσεων και κατασκευών.",
+    "url": "https://www.instagram.com/heritagent_/p/C30r1kgOGjR/?img_index=1",
+    "image":"./img/ergostasio-vamvakourgias.png",
+    "cat": [3]
+  },
+  {
+    "name": "Βιομηχανικό Μουσείο Φωταερίου",
+    "map_url": "https://maps.app.goo.gl/7Sm8AzADVeozyKtp8",
+    "coords": [37.97735477490248, 23.713264821932125],
+    "info": "Το συγκρότημα αποτέλεσε το Εργοστάσιο Φωταερίου, το οποίο ξεκίνησε τη λειτουργία του το 1862.",
+    "url": "https://www.instagram.com/heritagent_/p/C3FQBeDIs89/?img_index=1",
+    "image":"./img/fotaerion.png",
+    "cat": [3]
+  },
+  {
+    "name": "Πύργο της οδού Θήρας ή Πύργος Τυπάλδου",
+    "map_url": "https://maps.app.goo.gl/onDkywPD4BQ9Fwwn6",
+    "coords": [38.00206460840194, 23.73107177116515],
+    "info": "Νεογοτθικό κτήριο του 1914 που κτίστηκε ως κατοικία του εμπόρου φαρμάκων και φαρμακευτικών ειδών Τζώρτζη Αλφονσάτου Τυπάλδου.",
+    "url": "https://www.instagram.com/heritagent_/p/C19QqQwo2vO/?img_index=1",
+    "image":"./img/pyrgos-typaldoy.png",
+    "cat": [4]
+  },
+  {
+    "name": "Μεσοπολεμικό κτήριο της λεωφόρου Β. Αμαλίας",
+    "map_url": "https://maps.app.goo.gl/MndF9Y9MyctuhfPB7",
+    "coords": [37.97203294059467, 23.733816002241102],
+    "info": "Το κτήριο οικοδομήθηκε κατά τη δεκαετία του 1930, βάσει σχεδίων του αρχιτέκτονα Εμμανουήλ Λαζαρίδη και φέρει μεταγενέστερα τεκμήρια των πυροβολισμών που έλαβαν χώρα κατά τη διάρκεια της Μάχης της Αθήνας (Δεκεμβριανά).",
+    "url": "https://www.instagram.com/heritagent_/p/C0ZOb1BI86Y/?img_index=1",
+    "image":"./img/mesopolemiko-ktirio-amalias.png",
+    "cat": [4,6]
+  },
+  {
+    "name": "Βίλα Κεφαλληνού",
+    "map_url": "https://maps.app.goo.gl/Zs88Ju2Pgi3VXTPC7",
+    "coords": [38.0191336675808, 23.808833463240326],
+    "info": "Νεοκλασικό κτήριο, το οποίο κατοικήθηκε από την οικογένεια των Κεφαλληνών από το 1920 έως το 2010, οπότε και εγκαταλείφθηκε.",
+    "url": "https://www.instagram.com/heritagent_/p/CyQb1tzoj9A/?img_index=1",
+    "image":"./img/villa-kefalinou.png",
+    "cat": [4]
+  },
+  {
+    "name": "Οικία Καλλισπέρη",
+    "map_url": "https://maps.app.goo.gl/hiU9m62xg8BMA7DFA",
+    "coords": [37.96913317100248, 23.726078571163768],
+    "info": "Νεοκλασικό / Εκλεκτικιστικό πυργοειδές κτήριο του 1911 που στέγασε την αστική κατοικία της Σεβαστής Καλλισπέρη.",
+    "url": "https://www.instagram.com/heritagent_/p/CxaFoM9IJ9P/?img_index=1",
+    "image":"./img/oikia-kalisperi.png",
+    "cat": [4]
+  },
+  {
+    "name": "Μνημείο Ολοκαυτώματος Ελλήνων Εβραίων",
+    "map_url": "https://maps.app.goo.gl/BWvchmi2QBfoecHp6",
+    "coords": [37.97782610822996, 23.71946720149363],
+    "info": "Το μνημείο φιλοτεχνήθηκε το 2010 από την γλύπτρια Ντιάννα Μαγκανιά και συμβολίζει το πλήγμα που υπέστη ο Εβραϊσμός της Ελλάδας από τους ναζί.",
+    "url": "https://www.instagram.com/heritagent_/p/C2mfx67os3S/?img_index=1",
+    "image":"./img/mnimeio-olokaftomatos-evraion.png",
+    "cat": [6]
   }
 ]

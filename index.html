@@ -4,7 +4,6 @@
   <meta charset="utf-8" />
   <title>Πολιτιστικός Χάρτης Αθήνας</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <!-- Google Fonts: Playfair Display + Roboto -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,13 +13,11 @@
       family=Roboto:wght@400;500;700&display=swap"
     rel="stylesheet"
   />
-
   <!-- Leaflet CSS -->
   <link
     rel="stylesheet"
     href="https://unpkg.com/leaflet/dist/leaflet.css"
   />
-
   <!-- Bootstrap CSS -->
   <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
@@ -28,15 +25,12 @@
     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
     crossorigin="anonymous"
   />
-
   <!-- Font Awesome -->
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     crossorigin="anonymous"
   />
-
-  <!-- Your main stylesheet -->
   <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
@@ -45,10 +39,8 @@
   </header>
 
   <div class="container">
-    <h2>Σημεία Ενδιαφέροντος</h2>
     <p>
-      Παρακάτω εμφανίζονται σημαντικά πολιτιστικά σημεία στην πόλη της Αθήνας.
-      Πατήστε σε κάθε σημείο για να δείτε περισσότερες πληροφορίες.
+      Ο ψηφιακός χάρτης που ακολουθεί αποτελεί το αποτέλεσμα ανεξάρτητης, διαρκώς εξελισσόμενης έρευνας, βασισμένης στα μνημεία και τα ιστορικά κτήρια που παρουσιάζονται στη σελίδα HERITAGEnt. Στόχος μας είναι η διάθεση ανοιχτών και προσβάσιμων δεδομένων δημόσιας ψηφιακής ιστορίας, με σκοπό την ανάδειξη της ιστορικής, πολιτιστικής και αρχιτεκτονικής κληρονομιάς στον ψηφιακό χώρο.
     </p>
 
     <div class="filter-bar">
@@ -62,7 +54,7 @@
         <option value="1">Κατοικίες και Ιστορικά Κτήρια</option>
         <option value="2">Θρησκευτικά Μνημεία</option>
         <option value="3">Βιομηχανικά Κτήρια</option>
-        <option value="4">Δημόσια Κτήρια</option>
+        <option value="4">Κτήρια Αρχιτεκτονικής/Ιστορικής Αξίας</option>
         <option value="5">Εκπαιδευτικά Ιδρύματα</option>
         <option value="6">Τόποι Μνήμης</option>
         <option value="7">Δομές Υγείας</option>
@@ -70,6 +62,16 @@
     </div>
 
     <div id="map"></div>
+    <div style="margin-top: 40px;">
+      <div>
+        <p style="margin-bottom: 0px;"><strong>Ανάπτυξη και διαχείριση ψηφιακού χάρτη:</strong></p>
+        <p style="margin-top: 0px;">Κωνσταντίνος Μπαρμπούνης, Ιστορικός (ΕΚΠΑ), απόφοιτος του MSc in Digital Methods for the Humanities (ΟΠΑ).</p>
+      </div>
+      <div>
+        <p style="margin-bottom: 0px;"><strong>Έρευνα:</strong></p>
+        <p style="margin-top: 0px;">Κωνσταντίνα Μαρκόγλου, Αρχαιολόγος (ΕΚΠΑ), υπ. δρ. στη Σχολή Αρχιτεκτόνων Μηχανικών (ΕΜΠ).</p>
+      </div>
+    </div>
   </div>
 
 <footer class="site-credit">
