@@ -1,5 +1,5 @@
 // initialize map
-const map = L.map('map').setView([37.9838, 23.7275], 11);
+const map = L.map('map').setView([38.3, 25], 7);
 L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
   attribution: '© OpenStreetMap contributors'
 }).addTo(map);
@@ -9,7 +9,7 @@ const faIcons = {
   1: 'fa-house',          // Κατοικίες και Ιστορικά Κτήρια
   2: 'fa-church',         // Θρησκευτικά Μνημεία
   3: 'fa-industry',       // Βιομηχανικά Κτήρια
-  4: 'fa-landmark',       // Δημόσια Κτήρια
+  4: 'fa-landmark',       // Κτήρια Αρχιτεκτονικής/Ιστορικής Αξίας
   5: 'fa-graduation-cap', // Εκπαιδευτικά Ιδρύματα
   6: 'fa-monument',       // Τόποι Μνήμης
   7: 'fa-briefcase-medical' // Δομές Υγείας
@@ -20,7 +20,7 @@ const iconColors = {
   7: '#4cb2a2'
 };
 
-// build a Leaflet.divIcon for a given category
+// Leaflet.divIcon for a given category
 function createFAIcon(cat) {
   const iconClass = faIcons[cat] || 'fa-map-marker-alt';
   const iconColor = iconColors[cat] || '#333';
@@ -33,18 +33,17 @@ function createFAIcon(cat) {
   });
 }
 
-// render a list of points, given an optional selectedCategory (string or "")
+//list of points, given an optional selectedCategory (string or "")
 let allMarkers = [];
 function showPoints(points, selectedCategory = "") {
   // clear existing
   allMarkers.forEach(m => map.removeLayer(m));
   allMarkers = [];
 
-  // loop once, decide per-point which category-icon to use
   points.forEach(p => {
     // decide which category to use:
     // - if user selected one, use that
-    // - else take the first of p.cat (could also pick random if you prefer)
+    // - else take the first of p.cat
     const catNum = selectedCategory
       ? Number(selectedCategory)
       : (Array.isArray(p.cat) && p.cat.length > 0
@@ -55,7 +54,7 @@ function showPoints(points, selectedCategory = "") {
       icon: createFAIcon(catNum)
     }).addTo(map);
 
-    // bind popup (same html for all)
+    // bind popup
     const html = `
  <div style="text-align: center; max-width: 240px;">
     <div style="width: 100%;">
@@ -91,7 +90,7 @@ fetch('monuments.json')
 
     document.getElementById('category')
       .addEventListener('change', function() {
-        const sel = this.value;  // "" or "4", etc
+        const sel = this.value;  
         if (sel === "") {
           // no filter → show all
           showPoints(points, "");

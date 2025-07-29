@@ -430,5 +430,167 @@
     "url": "https://www.instagram.com/heritagent_/p/C2mfx67os3S/?img_index=1",
     "image":"./img/mnimeio-olokaftomatos-evraion.png",
     "cat": [6]
+  },
+  {
+    "name": "Πιεστήρια της εφημερίδας Χανιώτικα Νέα, Κρήτη",
+    "map_url": "https://maps.app.goo.gl/242Kr4CTuXRxDM5S7",
+    "coords": [35.48005316332025, 24.066177699999997],
+    "info": "Μουσείο Τυπογραφίας που έως το 2008 φιλοξενούσε τα πιεστήρια της εφημερίδας Χανιώτικα Νέα.",
+    "url": "https://www.instagram.com/heritagent_/p/DKczwZxoBD4/?img_index=1",
+    "image":"./img/piestiria-xaniotika-nea.png",
+    "cat": [3]
+  },
+  {
+    "name": "Τεχνολογικό Πολιτιστικό Πάρκο Λαυρίου",
+    "map_url": "https://maps.app.goo.gl/hpZ5MYX6ip5b5AtVA",
+    "coords": [37.724522002198206, 24.050268109059004],
+    "info": "Το συγκρότημα στο οποίο από το 1875 έως το 1989 λειτουργούσε η Γαλλική Εταιρεία Μεταλλείων Λαυρίου.",
+    "url": "https://www.instagram.com/heritagent_/p/DBOjvrwobyh/?img_index=1",
+    "image":"./img/lavrio-texnologiko.png",
+    "cat": [3]
+  },
+  {
+    "name": "Σαπωνοποιείο «Χαριλάου», Ελευσίνα",
+    "map_url": "https://maps.app.goo.gl/ZWdxwRYtAfdgTbmC7",
+    "coords": [38.03924704991196, 23.535253015116613],
+    "info": "Το πρώτο σαπωνοποιείο της Ελευσίνας χρονολογείται στο 1875 και σήμερα μας είναι γνωστό ως «Ελαιουργείο».",
+    "url": "https://www.instagram.com/heritagent_/p/C3coP-UIaUM/?img_index=2",
+    "image":"./img/saponopoiio-elefsina.png",
+    "cat": [3]
+  },
+  {
+    "name": "Κατοικία και εργαστήριο Γιάννη Μόραλη, Αίγινα",
+    "map_url": "https://maps.app.goo.gl/xgFEVyiyjoFUujbw8",
+    "coords": [37.7573988411653, 23.421091949726137],
+    "info": "Κατοικία με εργαστήρι του 1974-78, σε σχέδια του αρχιτέκτονα Άρη Κωνσταντινίδη.",
+    "url": "https://www.instagram.com/p/DMphlPCopxq/?img_index=1",
+    "image":"./img/spiti-morali-aigina.png",
+    "cat": [4]
+  },
+  {
+    "name": "Θέατρο «Απόλλων», Πάτρα.",
+    "map_url": "https://maps.app.goo.gl/vjX8GspuwC1Hqx5j8",
+    "coords": [38.24655017406413, 21.73539881349545],
+    "info": "Κτήριο νεοκλασικής και νεοαναγεννησιακής αρχιτεκτονικής που ανεγέρθηκε το 1872, σε σχέδια  του αρχιτέκτονα Ernst Ziller. ",
+    "url": "https://www.instagram.com/heritagent_/p/DBGQ2GWow2d/?img_index=1",
+    "image":"./img/apolon-patra.png",
+    "cat": [4]
+  },
+  {
+    "name": "Πυργόσπιτα Βάθειας, Μάνη",
+    "map_url": "https://maps.app.goo.gl/kPoAGkbBfgb95sXQ6",
+    "coords": [36.4533313040787, 22.466909810435606],
+    "info": "Σύνολο κτηρίων λαϊκής οχυρωματικής αρχιτεκτονικής ανώνυμων τεχνιτών που χρονολογούνται από τον β' μισό του 15ου ως τα τέλη του 19ου αιώνα.",
+    "url": "https://www.instagram.com/heritagent_/p/C5VSbnsox4Y/?img_index=1",
+    "image":"./img/pyrgospita-manis.png",
+    "cat": [4]
+  },
+  {
+    "name": "Βουλευτικό ή Μεγάλο Τζαμί, Ναύπλιο",
+    "map_url": "https://maps.app.goo.gl/djUxA8kmJoQFhFpQ7",
+    "coords": [37.56568931242467, 22.796348873092473],
+    "info": "Οθωμανικό τέμενος του 18ου αιώνα (περί το 1730), το οποίο από το φθινόπωρο του 1825 μέχρι την άνοιξη του 1826, στέγασε την πρώτη Βουλή των Ελλήνων.",
+    "url": "https://www.instagram.com/heritagent_/p/C4gTHK3rLa2/?img_index=1",
+    "image":"./img/vouleftiko-tzami-nafplio.png",
+    "cat": [4, 2]
+  },
+  {
+    "name": "Παράρτημα της Εθνικής Πινακοθήκης, Ναύπλιο.",
+    "map_url": "https://maps.app.goo.gl/F6USvoKfnm5gDQGw8",
+    "coords": [37.56615219674543, 22.80444752962518],
+    "info": "Νεοκλασικό κτήριο του 1905, σε σχέδια του Κ. Π. Χαντζάρα.",
+    "url": "https://www.instagram.com/heritagent_/p/C4X35NFIq93/?img_index=1",
+    "image":"./img/pinakothiki-nafplio.png",
+    "cat": [4]
+  },
+  {
+    "name": "Πύργος Μπότσαρη, Ναύπακτος.",
+    "map_url": "https://maps.app.goo.gl/FGf54qSHXfYjyfjf8",
+    "coords": [38.39304227510925, 21.82697210255736],
+    "info": "Πύργος που χτίστηκε σε δυο οικοδομικές φάσεις, στον 15ο και 16ο αιώνα και χρησιμοποιήθηκε πολλές φορές για τη στέγαση των εκάστοτε ηγεμόνων της πόλης.",
+    "url": "https://www.instagram.com/heritagent_/p/CwfAOWoL7cH/?img_index=1",
+    "image":"./img/pyrgos-mpotsari.png",
+    "cat": [4]
+  },
+  {
+    "name": "Δικαστικό Μέγαρο Τρίπολης.",
+    "map_url": "https://maps.app.goo.gl/PUWbhrkp5KRFeqkd8",
+    "coords": [37.51355932042565, 22.374487557669696],
+    "info": "Νεοκλασικό κτήριο του 1914 που στο ισόγειό του φέρει χαραγμένα μηνύματα από τους μελλοθάνατους της αντίστασης. ",
+    "url": "https://www.instagram.com/heritagent_/p/C-NMH3DId1O/?img_index=1",
+    "image":"./img/dikastiko-megaro-tripolis.png",
+    "cat": [6, 4]
+  },
+  {
+    "name": "«Μαρτυρικό χωριό» Κοσμά Αρκαδίας.",
+    "map_url": "https://maps.app.goo.gl/drxTLpjsLeLpdjtV6",
+    "coords": [37.092348224694234, 22.740523988936367],
+    "info": "Χωριό που κατά τη διάρκεια της Γερμανικής Κατοχής και συγκεκριμένα τον Ιανουάριο του 1944 δέχτηκε πυρά σε 498 από τα 505 σπίτια του χωριού.",
+    "url": "https://www.instagram.com/heritagent_/p/DBecwh2IiNt/?img_index=1",
+    "image":"./img/kosmas-arkadias.png",
+    "cat": [6]
+  },
+  {
+    "name": "Σπιναλόγκα, Κρήτη.",
+    "map_url": "https://maps.app.goo.gl/p61Yeqx1TspybJ7u6",
+    "coords": [35.29715880038768, 25.73799968095442],
+    "info": "Νησί αρχαιολογικού ενδιαφέροντος που από το 1903 στέγασε το Λεπροκομείου της Κρητικής Πολιτείας, για τον αποκλεισμό των πασχόντων από τη νόσο του Χάνσεν.",
+    "url": "https://www.instagram.com/heritagent_/p/C5HLh5_LECj/?img_index=1",
+    "image":"./img/spinalogga.png",
+    "cat": [6]
+  },
+  {
+    "name": "Γενι Τζαμί, Κομοτηνή.",
+    "map_url": "https://maps.app.goo.gl/1bLbEhEXnoBWJihQ9",
+    "coords": [41.118899223797726, 25.404857842328266],
+    "info": "Οθωμανικό τέμενος του 1585.",
+    "url": "https://www.instagram.com/heritagent_/p/DEnaRx8Oyye/?img_index=1",
+    "image":"./img/geni-tzami.png",
+    "cat": [2]
+  },
+  {
+    "name": "Καθολικός Ιερός Ναός Αγίου Ανδρέα, Πάτρα.",
+    "map_url": "https://maps.app.goo.gl/utTmZxh3REtjtBbz8",
+    "coords": [38.248154864378904, 21.737140771164135],
+    "info": "Καθολικός ναός του 1925, σε σχέδια του αρχιτέκτονα Καραβέλλα.",
+    "url": "https://www.instagram.com/heritagent_/p/DCEg4XzIfSg/?img_index=1",
+    "image":"./img/agios-andreas-patra.png",
+    "cat": [2]
+  },
+  {
+    "name": "Ιερός Ναός Παναγία Χρυσοπηγή, Σίφνος.",
+    "map_url": "https://maps.app.goo.gl/wkb8WDnuCnxPGpaZ9",
+    "coords": [36.93642888779412, 24.746268000000004],
+    "info": "Ορθόδοξη εκκλησία του 1650 πάνω στα ερείπια παλαιότερου ναού.",
+    "url": "https://www.instagram.com/heritagent_/p/C_DS2s3IIZ_/?img_index=1",
+    "image":"./img/xrysopigi-sifnos.png",
+    "cat": [2]
+  },
+  {
+    "name": "Ιερός Ναός Ταξιαρχών, Κάτω Πεδινά, Ιωάννινα.",
+    "map_url": "https://maps.app.goo.gl/bD1z8Sxoev8WHxLQ6",
+    "coords": [39.87966588369802, 20.678794155820672],
+    "info": "Ορθόδοξη εκκλησία του 1611/2.",
+    "url": "https://www.instagram.com/heritagent_/p/C-e1hR7IRgk/?img_index=1",
+    "image":"./img/naos-taxiarxon-ioannina.png",
+    "cat": [2]
+  },
+  {
+    "name": "Τζαμί Ιμπραήμ Χαν, Ρέθυμνο.",
+    "map_url": "https://maps.app.goo.gl/rPFdCwpHwHGQRw4J8",
+    "coords": [35.372413464843625, 24.47111273278409],
+    "info": "Οθωμανικό τέμενος του 1940-1948.",
+    "url": "https://www.instagram.com/heritagent_/p/C3kdUlno4eh/?img_index=1",
+    "image":"./img/tzami-xan-rethymno.png",
+    "cat": [2]
+  },
+  {
+    "name": "Βεζίρ Τζαμί, Κάστρο Ναυπάκτου",
+    "map_url": "https://maps.app.goo.gl/QSFRYzbH4ajzzMsV7",
+    "coords": [38.39568161293217, 21.828177000000004],
+    "info": "Οθωμανικό τέμενος του 1702-3.",
+    "url": "https://www.instagram.com/heritagent_/p/C1un6pfrDr6/?img_index=1",
+    "image":"./img/vezir-tzami-nafpaktos.png",
+    "cat": [2]
   }
 ]
