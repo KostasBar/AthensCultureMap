@@ -592,5 +592,41 @@
     "url": "https://www.instagram.com/heritagent_/p/C1un6pfrDr6/?img_index=1",
     "image":"./img/vezir-tzami-nafpaktos.png",
     "cat": [2]
+  },
+  {
+    "name": "Προέκταση της κατοικίας Τσίλλερ",
+    "map_url": "https://maps.app.goo.gl/1ri9RZA7tfQ86KPH7",
+    "coords": [37.982185003369445, 23.73387013004029],
+    "info": "Διώροφο εκλεκτικιστικό/νεογοτθικό κτήριο που συνδεόταν με την οικία Τσίλλερ/Μέγαρο Τσίλλερ-Λοβέρδου της οδού Μαυρομιχάλη 6.",
+    "url": "https://www.instagram.com/heritagent_/p/DOIyC0_Df3X/",
+    "image":"./img/proektasi-tsiller.png",
+    "cat": [1]
+  },
+  {
+    "name": "Σπίτια στο Κάστρο της Σίφνου",
+    "map_url": "https://maps.app.goo.gl/u58i824XGYSgn9eF8",
+    "coords": [36.975278185607344, 24.74503907116414],
+    "info": "Αρχοντικά με μαρμάρινα θυρώματα και οικόσημα, μέσα από τις περιγραφές της αρχιτέκτονος Αναστασίας Τζάκου.",
+    "url": "https://www.instagram.com/heritagent_/p/DNoPa7GtfpT/",
+    "image":"./img/kastro-sifnou.png",
+    "cat": [1]
+  },
+  {
+    "name": "Οικία Λαζάρου Κουντουριώτη",
+    "map_url": "https://maps.app.goo.gl/qZgyWZFfCTqSg84Q8",
+    "coords": [37.34835605022921, 23.46435464583384],
+    "info": "Κατοικία του 1780 και εμβληματικό δείγμα της παραδοσιακής υδραϊικής αρχιτεκτονικής.",
+    "url": "https://www.instagram.com/heritagent_/p/DNDpUhHI3fS/",
+    "image":"./img/oikia-lazaroy-koyntoyrioti.png",
+    "cat": [1,4]
+  },
+  {
+    "name": "Οι Περιστεριώνες της Τήνου",
+    "map_url": "https://maps.app.goo.gl/3CDauv1TrSkAm8Yq5",
+    "coords": [37.60250300694943, 25.157499956391742],
+    "info": "Οι περιστεριώνες μέσα από την μελέτη του Manuel Baud-Bovy.",
+    "url": "https://www.instagram.com/heritagent_/p/DNNdzbjIQQV/",
+    "image":"./img/peristeriones-tinou.png",
+    "cat": [4]
   }
 ]
