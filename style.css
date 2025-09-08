@@ -1,31 +1,40 @@
-/* Color & typography variables */
+/* =========================
+   Color & typography
+   ========================= */
 :root {
   --main-color: #111;
   --secondary-color: #555;
   --accent-color: #1a73e8;
   --bg-color: #fafafa;
 
-  /* Typographic scale */
   --fs-h1: 2.5rem;
   --fs-h2: 1.75rem;
   --fs-body: 1rem;
   --lh-body: 1.6;
 }
 
-/* Global resets and body */
-* {
-  box-sizing: border-box;
+/* =========================
+   Global
+   ========================= */
+* { box-sizing: border-box; }
+
+html, body {
+  height: 100%;
 }
+
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
   font-size: var(--fs-body);
   line-height: var(--lh-body);
-  background-color: var(--bg-color);
+  background-color: --bg-color;
   color: var(--main-color);
+  background-color: var(--bg-color);
 }
 
-/* Header */
+/* =========================
+   Header / Nav
+   ========================= */
 header {
   background-color: #fff;
   padding: 2rem 1rem 1rem;
@@ -36,17 +45,11 @@ header h1 {
   margin: 0;
   font-size: var(--fs-h1);
   font-family: "Roboto", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 900;
   font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+  font-variation-settings: "wdth" 100;
 }
-
-/* Navigation*/
-nav {
-  margin-top: 0.5rem;
-}
+nav { margin-top: 0.5rem; }
 nav a {
   text-decoration: none;
   color: var(--secondary-color);
@@ -55,31 +58,31 @@ nav a {
   font-family: 'Roboto', sans-serif;
 }
 
-/* Container */
+/* =========================
+   Layout container
+   ========================= */
 .container {
   max-width: 1200px;
   margin: 2rem auto;
   padding: 0 1rem;
 }
 
-/* Section headings */
+/* =========================
+   Typography
+   ========================= */
 h2, h3 {
   margin-top: 2rem;
   font-size: var(--fs-h2);
   font-family: "Roboto", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+  font-variation-settings: "wdth" 100;
 }
+p { margin-top: 1rem; }
 
-/* Paragraphs */
-p {
-  margin-top: 1rem;
-}
-
-/* Filter bar */
+/* =========================
+   Filter bar
+   ========================= */
 .filter-bar {
   display: flex;
   align-items: center;
@@ -98,67 +101,101 @@ p {
   font-family: 'Roboto', sans-serif;
 }
 
-/* Map container */
+/* =========================
+   Map container
+   ========================= */
 #map {
-  height: 700px;
+  height: clamp(52vh, 68vh, 900px);
   width: 100%;
   border: 1px solid #ddd;
   border-radius: 10px;
+  overflow: hidden;
 }
 
-/* Leaflet popups */
+.leaflet-container a { color: var(--accent-color); }
+
+/* =========================
+   Leaflet popup polish
+   ========================= */
 .leaflet-popup-content-wrapper {
+  max-height: 60vh;
+  overflow: hidden;
   border-radius: 10px;
-  padding: 10px;
-  max-height: 350px;
-  overflow-y: auto;
 }
 .leaflet-popup-content {
-  font-size: 0.95rem;
-  color: var(--main-color);
+  margin: 10px 12px;
+}
+.leaflet-popup-tip {
+  box-shadow: none;
 }
 
-/* “Read more” links */
+/* =========================
+   Popup card (όλο το περιεχόμενο)
+   ========================= */
+.popup-card {
+  text-align: center;
+  width: 100%;
+  max-width: clamp(220px, 65vw, 320px);
+  padding: 4px;
+}
+.popup-card strong {
+  display: inline-block;
+  margin-top: 4px;
+}
+.popup-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-bottom: 6px;
+  background: #eee;
+  object-fit: cover;
+}
+
 a.more-link {
   display: inline-block;
-  margin-top: 5px;
+  margin-top: 6px;
   text-decoration: none;
   color: var(--accent-color);
   font-weight: 500;
   font-family: 'Roboto', sans-serif;
 }
-a.more-link:hover {
-  text-decoration: underline;
-}
+a.more-link:hover { text-decoration: underline; }
 
-/* Site credit at bottom-right */
+/* =========================
+   Site credit
+   ========================= */
 .site-credit {
   position: fixed;
   bottom: 1rem;
-  right: 1rem;
+  left: 1rem;
   font-size: 0.875rem;
   font-family: 'Roboto', sans-serif;
-  background: rgba(255,255,255,0.8);
+  background: rgba(255,255,255,0.9);
   padding: 0.25rem 0.5rem;
   border-radius: 4px;
   box-shadow: 0 1px 4px rgba(0,0,0,0.1);
 }
-.site-credit a {
-  color: var(--secondary-color);
-  text-decoration: none;
-}
-.site-credit a:hover {
-  color: var(--accent-color);
-}
+.site-credit a { color: var(--secondary-color); text-decoration: none; }
+.site-credit a:hover { color: var(--accent-color); }
 
-
-/* Responsive tweaks */
+/* =========================
+   Small screens
+   ========================= */
 @media (max-width: 600px) {
-  header h1 {
-    font-size: 1.5rem;
+  header h1 { font-size: 1.25rem; }
+  .container { padding: 0 0.75rem; }
+  #map { height: clamp(55vh, 64vh, 720px); }
+}
+
+@media (max-width: 480px) {
+  .popup-card {
+    max-width: clamp(200px, 55vw, 260px);
   }
-  nav a {
-    display: block;
-    margin: 0.3rem 0;
+}
+
+@media (max-width: 360px) {
+  .popup-card {
+    max-width: clamp(190px, 52vw, 240px);
   }
+  .leaflet-popup-content { font-size: 0.95rem; }
 }
