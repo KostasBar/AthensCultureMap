@@ -102,7 +102,7 @@ function showPoints(points, selectedCategory = "") {
 
     const marker = L.marker(p.coords, { icon: createFAIcon(catNum) });
     marker.bindPopup(buildPopupHtml(p), {
-      maxWidth: 340,   
+      maxWidth: 300,          
       keepInView: true,
       autoPan: true,
       autoPanPadding: [20, 20]
@@ -120,7 +120,7 @@ function showPoints(points, selectedCategory = "") {
 }
 
 // =========================
-// Data load & filter wiring
+/* Data load & filter wiring */
 // =========================
 fetch('monuments.json', { cache: 'no-cache' })
   .then(r => r.json())

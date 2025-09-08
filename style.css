@@ -1,5 +1,5 @@
 /* =========================
-   Color & typography
+   Color & typography tokens
    ========================= */
 :root {
   --main-color: #111;
@@ -7,9 +7,12 @@
   --accent-color: #1a73e8;
   --bg-color: #fafafa;
 
-  --fs-h1: 2.5rem;
-  --fs-h2: 1.75rem;
-  --fs-body: 1rem;
+  /* Fluid typography (scales with viewport) */
+  --fs-body: clamp(0.95rem, 0.9rem + 0.4vw, 1.0625rem);  /* ~15px → ~17px */
+  --fs-h1:   clamp(1.6rem, 1.2rem + 2.2vw, 2.6rem);      /* ~26px → ~42px */
+  --fs-h2:   clamp(1.3rem, 1.05rem + 1.2vw, 2rem);       /* ~21px → ~32px */
+  --fs-h3:   clamp(1.15rem, 1rem + 0.8vw, 1.5rem);       /* ~18px → ~24px */
+
   --lh-body: 1.6;
 }
 
@@ -18,16 +21,13 @@
    ========================= */
 * { box-sizing: border-box; }
 
-html, body {
-  height: 100%;
-}
+html, body { height: 100%; }
 
 body {
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', system-ui, -apple-system, Segoe UI, Arial, sans-serif;
   font-size: var(--fs-body);
   line-height: var(--lh-body);
-  background-color: --bg-color;
   color: var(--main-color);
   background-color: var(--bg-color);
 }
@@ -44,9 +44,7 @@ header {
 header h1 {
   margin: 0;
   font-size: var(--fs-h1);
-  font-family: "Roboto", sans-serif;
   font-weight: 900;
-  font-style: normal;
   font-variation-settings: "wdth" 100;
 }
 nav { margin-top: 0.5rem; }
@@ -55,7 +53,6 @@ nav a {
   color: var(--secondary-color);
   margin: 0 0.75rem;
   font-weight: 500;
-  font-family: 'Roboto', sans-serif;
 }
 
 /* =========================
@@ -72,13 +69,13 @@ nav a {
    ========================= */
 h2, h3 {
   margin-top: 2rem;
-  font-size: var(--fs-h2);
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', system-ui, -apple-system, Segoe UI, Arial, sans-serif;
   font-weight: 600;
-  font-style: normal;
   font-variation-settings: "wdth" 100;
 }
-p { margin-top: 1rem; }
+h2 { font-size: var(--fs-h2); }
+h3 { font-size: var(--fs-h3); }
+p  { margin-top: 1rem; }
 
 /* =========================
    Filter bar
@@ -93,12 +90,11 @@ p { margin-top: 1rem; }
 .filter-bar label {
   white-space: nowrap;
   font-weight: 500;
-  font-family: 'Roboto', sans-serif;
 }
 .filter-bar select {
   flex: 1 1 auto;
   max-width: 300px;
-  font-family: 'Roboto', sans-serif;
+  font: inherit;
 }
 
 /* =========================
@@ -112,6 +108,7 @@ p { margin-top: 1rem; }
   overflow: hidden;
 }
 
+/* Link color in Leaflet UI */
 .leaflet-container a { color: var(--accent-color); }
 
 /* =========================
@@ -124,13 +121,13 @@ p { margin-top: 1rem; }
 }
 .leaflet-popup-content {
   margin: 10px 12px;
+  font-size: clamp(0.95rem, 0.9rem + 0.2vw, 1.05rem);
+  line-height: 1.5;
 }
-.leaflet-popup-tip {
-  box-shadow: none;
-}
+.leaflet-popup-tip { box-shadow: none; }
 
 /* =========================
-   Popup card (όλο το περιεχόμενο)
+   Popup card (entire content)
    ========================= */
 .popup-card {
   text-align: center;
@@ -141,6 +138,13 @@ p { margin-top: 1rem; }
 .popup-card strong {
   display: inline-block;
   margin-top: 4px;
+  font-size: clamp(1rem, 0.95rem + 0.3vw, 1.125rem);
+}
+.popup-card small {
+  display: inline-block;
+  margin-top: 2px;
+  color: var(--secondary-color);
+  font-size: clamp(0.875rem, 0.85rem + 0.2vw, 0.95rem);
 }
 .popup-card img {
   max-width: 100%;
@@ -151,13 +155,13 @@ p { margin-top: 1rem; }
   object-fit: cover;
 }
 
+/* Link in popup */
 a.more-link {
   display: inline-block;
   margin-top: 6px;
   text-decoration: none;
   color: var(--accent-color);
   font-weight: 500;
-  font-family: 'Roboto', sans-serif;
 }
 a.more-link:hover { text-decoration: underline; }
 
@@ -167,9 +171,8 @@ a.more-link:hover { text-decoration: underline; }
 .site-credit {
   position: fixed;
   bottom: 1rem;
-  left: 1rem;
-  font-size: 0.875rem;
-  font-family: 'Roboto', sans-serif;
+  right: 1rem;
+  font-size: clamp(0.8rem, 0.75rem + 0.2vw, 0.9rem);
   background: rgba(255,255,255,0.9);
   padding: 0.25rem 0.5rem;
   border-radius: 4px;
@@ -182,20 +185,20 @@ a.more-link:hover { text-decoration: underline; }
    Small screens
    ========================= */
 @media (max-width: 600px) {
-  header h1 { font-size: 1.25rem; }
+  header h1 { /* cap H1 on small phones for balance */
+    font-size: clamp(1.4rem, 1.2rem + 2vw, 2rem);
+  }
   .container { padding: 0 0.75rem; }
   #map { height: clamp(55vh, 64vh, 720px); }
 }
 
+/* Even smaller popups on small screens */
 @media (max-width: 480px) {
-  .popup-card {
-    max-width: clamp(200px, 55vw, 260px);
-  }
+  .popup-card { max-width: clamp(200px, 55vw, 260px); }
 }
 
+/* Ultra small phones */
 @media (max-width: 360px) {
-  .popup-card {
-    max-width: clamp(190px, 52vw, 240px);
-  }
-  .leaflet-popup-content { font-size: 0.95rem; }
+  .popup-card { max-width: clamp(190px, 52vw, 240px); }
+  .leaflet-popup-content { font-size: clamp(0.9rem, 0.85rem + 0.2vw, 0.98rem); }
 }
