@@ -8,10 +8,10 @@
   --bg-color: #fafafa;
 
   /* Fluid typography (scales with viewport) */
-  --fs-body: clamp(0.95rem, 0.9rem + 0.4vw, 1.0625rem);  /* ~15px → ~17px */
-  --fs-h1:   clamp(1.6rem, 1.2rem + 2.2vw, 2.6rem);      /* ~26px → ~42px */
-  --fs-h2:   clamp(1.3rem, 1.05rem + 1.2vw, 2rem);       /* ~21px → ~32px */
-  --fs-h3:   clamp(1.15rem, 1rem + 0.8vw, 1.5rem);       /* ~18px → ~24px */
+  --fs-body: clamp(0.95rem, 0.9rem + 0.4vw, 1.0625rem); /* ~15px → ~17px */
+  --fs-h1: clamp(1.6rem, 1.2rem + 2.2vw, 2.6rem); /* ~26px → ~42px */
+  --fs-h2: clamp(1.3rem, 1.05rem + 1.2vw, 2rem); /* ~21px → ~32px */
+  --fs-h3: clamp(1.15rem, 1rem + 0.8vw, 1.5rem); /* ~18px → ~24px */
 
   --lh-body: 1.6;
 }
@@ -19,13 +19,18 @@
 /* =========================
    Global
    ========================= */
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 
-html, body { height: 100%; }
+html,
+body {
+  height: 100%;
+}
 
 body {
   margin: 0;
-  font-family: 'Roboto', system-ui, -apple-system, Segoe UI, Arial, sans-serif;
+  font-family: "Roboto", system-ui, -apple-system, Segoe UI, Arial, sans-serif;
   font-size: var(--fs-body);
   line-height: var(--lh-body);
   color: var(--main-color);
@@ -47,7 +52,9 @@ header h1 {
   font-weight: 900;
   font-variation-settings: "wdth" 100;
 }
-nav { margin-top: 0.5rem; }
+nav {
+  margin-top: 0.5rem;
+}
 nav a {
   text-decoration: none;
   color: var(--secondary-color);
@@ -67,15 +74,22 @@ nav a {
 /* =========================
    Typography
    ========================= */
-h2, h3 {
+h2,
+h3 {
   margin-top: 2rem;
-  font-family: 'Roboto', system-ui, -apple-system, Segoe UI, Arial, sans-serif;
+  font-family: "Roboto", system-ui, -apple-system, Segoe UI, Arial, sans-serif;
   font-weight: 600;
   font-variation-settings: "wdth" 100;
 }
-h2 { font-size: var(--fs-h2); }
-h3 { font-size: var(--fs-h3); }
-p  { margin-top: 1rem; }
+h2 {
+  font-size: var(--fs-h2);
+}
+h3 {
+  font-size: var(--fs-h3);
+}
+p {
+  margin-top: 1rem;
+}
 
 /* =========================
    Filter bar
@@ -109,7 +123,9 @@ p  { margin-top: 1rem; }
 }
 
 /* Link color in Leaflet UI */
-.leaflet-container a { color: var(--accent-color); }
+.leaflet-container a {
+  color: var(--accent-color);
+}
 
 /* =========================
    Leaflet popup polish
@@ -124,7 +140,9 @@ p  { margin-top: 1rem; }
   font-size: clamp(0.95rem, 0.9rem + 0.2vw, 1.05rem);
   line-height: 1.5;
 }
-.leaflet-popup-tip { box-shadow: none; }
+.leaflet-popup-tip {
+  box-shadow: none;
+}
 
 /* =========================
    Popup card (entire content)
@@ -138,7 +156,8 @@ p  { margin-top: 1rem; }
 .popup-card strong {
   display: inline-block;
   margin-top: 4px;
-  font-size: clamp(1rem, 0.95rem + 0.3vw, 1.125rem);
+  font-size: clamp(0.95rem, 0.9rem + 0.25vw, 1.05rem);
+  font-weight: 700;
 }
 .popup-card small {
   display: inline-block;
@@ -163,42 +182,93 @@ a.more-link {
   color: var(--accent-color);
   font-weight: 500;
 }
-a.more-link:hover { text-decoration: underline; }
+a.more-link:hover {
+  text-decoration: underline;
+}
 
-/* =========================
-   Site credit
-   ========================= */
+/* ========================= Site credit ========================= */
 .site-credit {
   position: fixed;
   bottom: 1rem;
   right: 1rem;
   font-size: clamp(0.8rem, 0.75rem + 0.2vw, 0.9rem);
-  background: rgba(255,255,255,0.9);
+  background: rgba(255, 255, 255, 0.9);
   padding: 0.25rem 0.5rem;
   border-radius: 4px;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
 }
-.site-credit a { color: var(--secondary-color); text-decoration: none; }
-.site-credit a:hover { color: var(--accent-color); }
+.site-credit a {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+.site-credit a:hover {
+  color: var(--accent-color);
+}
+/* =========================
+   Credits 
+   ========================= */
+.credits {
+  margin-top: 40px; 
+  display: grid;
+  gap: 0.75rem;
+}
+
+.credits > div {
+  padding: 0; 
+  border-top: 1px solid #e0e0e0;
+}
+
+.credits > div:first-child {
+  border-top: 0;
+}
+
+.credits p {
+  margin: 0; 
+  line-height: 1.55;
+  font-size: clamp(0.95rem, 0.9rem + 0.2vw, 1rem);
+}
+
+.credits strong {
+  font-weight: 600; 
+}
+
+.credits a {
+  text-decoration: underline; 
+  color: var(--secondary-color);
+}
+
+.credits a:hover {
+  color: var(--accent-color); 
+}
 
 /* =========================
    Small screens
    ========================= */
 @media (max-width: 600px) {
-  header h1 { /* cap H1 on small phones for balance */
+  header h1 {
     font-size: clamp(1.4rem, 1.2rem + 2vw, 2rem);
   }
-  .container { padding: 0 0.75rem; }
-  #map { height: clamp(55vh, 64vh, 720px); }
+  .container {
+    padding: 0 0.75rem;
+  }
+  #map {
+    height: clamp(55vh, 64vh, 720px);
+  }
 }
 
 /* Even smaller popups on small screens */
 @media (max-width: 480px) {
-  .popup-card { max-width: clamp(200px, 55vw, 260px); }
+  .popup-card {
+    max-width: clamp(200px, 55vw, 260px);
+  }
 }
 
 /* Ultra small phones */
 @media (max-width: 360px) {
-  .popup-card { max-width: clamp(190px, 52vw, 240px); }
-  .leaflet-popup-content { font-size: clamp(0.9rem, 0.85rem + 0.2vw, 0.98rem); }
+  .popup-card {
+    max-width: clamp(190px, 52vw, 240px);
+  }
+  .leaflet-popup-content {
+    font-size: clamp(0.9rem, 0.85rem + 0.2vw, 0.98rem);
+  }
 }
