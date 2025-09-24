@@ -68,8 +68,8 @@ function buildPopupHtml(p) {
           width="240" height="180"
         />
       ` : ''}
-      <strong>${safeName}</strong><br>
-      ${safeInfo ? `<small>${safeInfo}</small><br>` : ''}
+      <strong>${safeName}</strong>
+      ${safeInfo ? `<small>${safeInfo}</small>` : ''}
       <a href="${safeUrl}" target="_blank" rel="noopener noreferrer" class="more-link">
         Δείτε Περισσότερα...
       </a>
@@ -103,7 +103,7 @@ function showPoints(points, selectedCategory = "") {
     const marker = L.marker(p.coords, { icon: createFAIcon(catNum) });
     marker.bindPopup(buildPopupHtml(p), {
       maxWidth: 300,          
-      keepInView: true,
+      keepInView: false,
       autoPan: true,
       autoPanPadding: [20, 20]
     });

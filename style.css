@@ -7,268 +7,355 @@
   --accent-color: #1a73e8;
   --bg-color: #fafafa;
 
-  /* Fluid typography (scales with viewport) */
-  --fs-body: clamp(0.95rem, 0.9rem + 0.4vw, 1.0625rem); /* ~15px → ~17px */
-  --fs-h1: clamp(1.6rem, 1.2rem + 2.2vw, 2.6rem); /* ~26px → ~42px */
-  --fs-h2: clamp(1.3rem, 1.05rem + 1.2vw, 2rem); /* ~21px → ~32px */
-  --fs-h3: clamp(1.15rem, 1rem + 0.8vw, 1.5rem); /* ~18px → ~24px */
+  /* Fonts */
+  --font-body: "Roboto", system-ui, -apple-system, "Segoe UI", Arial, Helvetica, sans-serif;
+  --font-title: "Roboto","Playfair Display", Georgia, "Times New Roman", serif;
 
-  --lh-body: 1.6;
+  /* Fluid typography */
+  --fs-body: clamp(0.88rem, 0.84rem + 0.25vw, 0.98rem);
+  --fs-h1:   clamp(1.35rem, 1.05rem + 1.8vw, 2.1rem);
+  --fs-h2:   clamp(1.15rem, 0.95rem + 1.2vw, 1.6rem);
+  --fs-h3:   clamp(1.05rem, 0.95rem + 0.7vw, 1.3rem);
+
+  --lh-body: 1.55;
+
+  /* Spacing */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+
+  /* Shadows & radii */
+  --shadow-1: 0 1px 2px rgba(0,0,0,.06), 0 1px 3px rgba(0,0,0,.1);
+  --shadow-2: 0 10px 15px rgba(0,0,0,.08), 0 4px 6px rgba(0,0,0,.06);
+  --radius-1: 10px;
+  --radius-2: 16px;
 }
 
 /* =========================
-   Global
+   Base
    ========================= */
-* {
-  box-sizing: border-box;
-}
+*,
+*::before,
+*::after { box-sizing: border-box; }
 
-html,
-body {
-  height: 100%;
-}
+html, body { height: 100%; }
 
 body {
   margin: 0;
-  font-family: "Roboto", system-ui, -apple-system, Segoe UI, Arial, sans-serif;
+  color: var(--main-color);
+  background: var(--bg-color);
+  font-family: var(--font-body);
   font-size: var(--fs-body);
   line-height: var(--lh-body);
-  color: var(--main-color);
-  background-color: var(--bg-color);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3,
+header h1,
+.result-card h3 { font-family: var(--font-title); }
+
+img, svg { max-width: 100%; height: auto; display: block; }
+
+a { color: var(--accent-color); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* Utilities */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--space-4);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: var(--space-5);
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #e9e9e9;
+  border-radius: var(--radius-1);
+  box-shadow: var(--shadow-1);
+}
+
+main .container > h1,
+main .container > p {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* =========================
    Header / Nav
    ========================= */
 header {
-  background-color: #fff;
-  padding: 2rem 1rem 1rem;
-  border-bottom: 1px solid #e0e0e0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+}
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+  padding: var(--space-4) 0;
 }
 header h1 {
   margin: 0;
-  font-size: var(--fs-h1);
-  font-weight: 900;
-  font-variation-settings: "wdth" 100;
+  font-size: clamp(1.2rem, 1rem + 1.5vw, 1.6rem);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  text-align: center;
 }
-nav {
-  margin-top: 0.5rem;
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: var(--space-4);
+  margin: 0;
+  padding: 0;
 }
 nav a {
-  text-decoration: none;
-  color: var(--secondary-color);
-  margin: 0 0.75rem;
-  font-weight: 500;
+  display: inline-block;
+  padding: .4rem .65rem;
+  border-radius: 8px;
 }
+nav a:hover { background: #f3f5f7; }
 
 /* =========================
-   Layout container
+   Sidebar / Filters
    ========================= */
-.container {
-  max-width: 1200px;
-  margin: 2rem auto;
-  padding: 0 1rem;
+.sidebar {
+  position: sticky;
+  top: calc(64px + var(--space-4));
+  align-self: start;
+  padding: var(--space-4);
+  border: 1px solid #eee;
+  border-radius: var(--radius-1);
+  background: #fff;
+  box-shadow: var(--shadow-1);
 }
-
-/* =========================
-   Typography
-   ========================= */
-h2,
-h3 {
-  margin-top: 2rem;
-  font-family: "Roboto", system-ui, -apple-system, Segoe UI, Arial, sans-serif;
-  font-weight: 600;
-  font-variation-settings: "wdth" 100;
-}
-h2 {
+.sidebar h2 {
+  margin: 0 0 var(--space-3);
   font-size: var(--fs-h2);
 }
-h3 {
-  font-size: var(--fs-h3);
+.filter-group { margin-bottom: var(--space-4); }
+.filter-group label {
+  display: block;
+  margin-bottom: .35rem;
+  color: var(--secondary-color);
+  font-weight: 600;
 }
-p {
-  margin-top: 1rem;
-}
-
-/* =========================
-   Filter bar
-   ========================= */
-.filter-bar {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  flex-wrap: wrap;
-  margin: 1rem 0;
-}
-.filter-bar label {
-  white-space: nowrap;
-  font-weight: 500;
-}
-.filter-bar select {
-  flex: 1 1 auto;
-  max-width: 300px;
+select, input[type="text"], .btn {
+  width: 100%;
+  padding: .6rem .7rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
   font: inherit;
+  background: #fff;
 }
+.btn {
+  cursor: pointer;
+  background: var(--accent-color);
+  color: #fff;
+  border: none;
+  font-weight: 600;
+}
+.btn:hover { filter: brightness(1.05); }
 
 /* =========================
-   Map container
+   Map
    ========================= */
+.map-wrap { position: relative; }
+
 #map {
-  height: clamp(52vh, 68vh, 900px);
+  height: min(60dvh, 720px);
   width: 100%;
   border: 1px solid #ddd;
-  border-radius: 10px;
+  border-radius: var(--radius-1);
   overflow: hidden;
 }
+@supports not (height: 1dvh) {
+  #map { height: min(60vh, 720px); }
+}
 
-/* Link color in Leaflet UI */
-.leaflet-container a {
-  color: var(--accent-color);
+/* Leaflet tweaks */
+.leaflet-container {
+  background: #fff;
+  outline-offset: 1px;
+  touch-action: none;
+}
+.leaflet-container.leaflet-touch-drag.leaflet-touch-zoom,
+.leaflet-container.leaflet-touch-zoom {
+  -ms-touch-action: pan-x pan-y;
+  touch-action: pan-x pan-y;
+}
+.leaflet-container .leaflet-control-attribution {
+  font-size: .78rem;
+  color: var(--secondary-color);
 }
 
 /* =========================
-   Leaflet popup polish
+   Popup card
    ========================= */
-.leaflet-popup-content-wrapper {
-  max-height: 60vh;
-  overflow: hidden;
-  border-radius: 10px;
-}
 .leaflet-popup-content {
-  margin: 10px 12px;
-  font-size: clamp(0.95rem, 0.9rem + 0.2vw, 1.05rem);
-  line-height: 1.5;
-}
-.leaflet-popup-tip {
-  box-shadow: none;
-}
-
-/* =========================
-   Popup card (entire content)
-   ========================= */
-.popup-card {
+  margin: .5rem;
+  font-size: clamp(0.9rem, 0.86rem + 0.18vw, 1rem);
+  line-height: 1.45;
   text-align: center;
-  width: 100%;
-  max-width: clamp(220px, 65vw, 320px);
-  padding: 4px;
 }
-.popup-card strong {
-  display: inline-block;
-  margin-top: 4px;
-  font-size: clamp(0.95rem, 0.9rem + 0.25vw, 1.05rem);
-  font-weight: 700;
-}
-.popup-card small {
-  display: inline-block;
-  margin-top: 2px;
-  color: var(--secondary-color);
-  font-size: clamp(0.875rem, 0.85rem + 0.2vw, 0.95rem);
-}
-.popup-card img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 6px;
-  margin-bottom: 6px;
-  background: #eee;
-  object-fit: cover;
-}
+.leaflet-popup-content,
+.leaflet-popup-content * { font-family: var(--font-body) !important; }
 
-/* Link in popup */
-a.more-link {
-  display: inline-block;
-  margin-top: 6px;
-  text-decoration: none;
-  color: var(--accent-color);
-  font-weight: 500;
-}
-a.more-link:hover {
-  text-decoration: underline;
-}
-
-/* ========================= Site credit ========================= */
-.site-credit {
-  position: fixed;
-  bottom: 1rem;
-  right: 1rem;
-  font-size: clamp(0.8rem, 0.75rem + 0.2vw, 0.9rem);
-  background: rgba(255, 255, 255, 0.9);
-  padding: 0.25rem 0.5rem;
-  border-radius: 4px;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
-}
-.site-credit a {
-  color: var(--secondary-color);
-  text-decoration: none;
-}
-.site-credit a:hover {
-  color: var(--accent-color);
-}
-/* =========================
-   Credits 
-   ========================= */
-.credits {
-  margin-top: 40px; 
+.popup-card {
   display: grid;
-  gap: 0.75rem;
+  gap: .35rem;
+  min-width: 220px;
+  max-width: 320px;
+  place-items: center;
+  text-align: center;
 }
-
-.credits > div {
-  padding: 0; 
-  border-top: 1px solid #e0e0e0;
-}
-
-.credits > div:first-child {
-  border-top: 0;
-}
-
-.credits p {
-  margin: 0; 
-  line-height: 1.55;
-  font-size: clamp(0.95rem, 0.9rem + 0.2vw, 1rem);
-}
-
-.credits strong {
-  font-weight: 600; 
-}
-
-.credits a {
-  text-decoration: underline; 
+.popup-card h3 { margin: 0; font-size: var(--fs-h3); }
+.popup-card .meta {
+  display: flex; flex-wrap: wrap;
+  gap: .25rem .5rem;
   color: var(--secondary-color);
+  font-size: .95em;
+}
+.popup-card .tags { display: flex; flex-wrap: wrap; gap: .35rem; }
+.popup-card img,
+.popup-card figure img { display: block; margin-inline: auto; }
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: .35rem;
+  padding: .3rem .5rem;
+  background: #f3f6ff;
+  color: #234;
+  border: 1px solid #e3e9ff;
+  border-radius: 999px;
+  font-size: .88em;
+}
+.tag .dot { width: .5rem; height: .5rem; border-radius: 50%; background: #4b7bec; }
+
+/* Zoom controls nudge */
+.leaflet-top.leaflet-left .leaflet-control-zoom {
+  box-shadow: var(--shadow-1);
+  border-radius: 8px;
+  overflow: hidden;
 }
 
-.credits a:hover {
-  color: var(--accent-color); 
+/* Marker shadow */
+.leaflet-marker-icon { filter: drop-shadow(0 2px 3px rgba(0,0,0,.2)); }
+
+/* Floating credit */
+.site-credit {
+  position: absolute;
+  bottom: .75rem;
+  right: .75rem;
+  background: rgba(255,255,255,.92);
+  backdrop-filter: blur(4px);
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: .25rem .5rem;
+  font-size: clamp(0.72rem, 0.7rem + 0.16vw, 0.85rem);
+  color: #333;
+  box-shadow: var(--shadow-1);
 }
 
 /* =========================
-   Small screens
+   Content list / results
    ========================= */
+.results { display: grid; gap: var(--space-4); }
+.result-card { padding: var(--space-4); }
+.result-card h3 { margin: 0 0 .35rem; font-size: var(--fs-h3); }
+.result-card .excerpt { color: var(--secondary-color); }
+
+/* =========================
+   Footer
+   ========================= */
+footer {
+  margin-top: var(--space-6);
+  padding: var(--space-5) 0;
+  color: var(--secondary-color);
+  border-top: 1px solid #eee;
+}
+
+/* =========================
+   Media queries
+   ========================= */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .grid { grid-template-columns: 280px 1fr; }
+}
+
+/* Phones */
+@media (max-width: 768px) {
+  .grid { grid-template-columns: 1fr; }
+  .sidebar { position: static; }
+}
+
+/* ===== Mobile reset (<=600px) — stable popup & no overflow ===== */
 @media (max-width: 600px) {
-  header h1 {
-    font-size: clamp(1.4rem, 1.2rem + 2vw, 2rem);
-  }
-  .container {
-    padding: 0 0.75rem;
-  }
-  #map {
-    height: clamp(55vh, 64vh, 720px);
-  }
-}
 
-/* Even smaller popups on small screens */
-@media (max-width: 480px) {
-  .popup-card {
-    max-width: clamp(200px, 55vw, 260px);
-  }
-}
+  #map { height: 65svh; }
 
-/* Ultra small phones */
-@media (max-width: 360px) {
-  .popup-card {
-    max-width: clamp(190px, 52vw, 240px);
+  .leaflet-popup {
+    margin: 8px;
+    max-width: none;
   }
+  .leaflet-popup-content-wrapper {
+    padding: 10px;
+    border-radius: 12px;
+    box-sizing: border-box;
+    overflow: visible;
+  }
+  .leaflet-popup-tip { width: 10px; height: 10px; }
   .leaflet-popup-content {
-    font-size: clamp(0.9rem, 0.85rem + 0.2vw, 0.98rem);
+    width: clamp(240px, 82vw, 320px); 
+    max-height: 60svh;                 
+    overflow: auto;
+    font-size: 0.92rem;
+    line-height: 1.4;
+    overflow-wrap: anywhere;
+    word-break: break-word;
   }
+  .popup-card {
+    width: 100%;
+    max-width: none;
+    gap: .3rem;
+    place-items: center;
+    text-align: center;
+  }
+  .popup-card h3 { font-size: clamp(1rem, 0.95rem + 0.6vw, 1.15rem); }
+  .popup-card .meta { font-size: .9em; }
+  .popup-card .tags { gap: .3rem; }
+  .tag { padding: .25rem .45rem; font-size: .84em; }
+  .popup-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 28svh;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  .leaflet-control-zoom { transform: scale(0.9); transform-origin: bottom right; }
+  html, body { overflow-x: hidden; }
+}
+
+/* ===== Very small phones (<=380px) ===== */
+@media (max-width: 380px) {
+  .leaflet-popup-content {
+    width: clamp(220px, 86vw, 300px);
+    max-height: 56svh;
+    font-size: 0.9rem;
+  }
+  .popup-card img { max-height: 24svh; }
 }
