@@ -8,8 +8,9 @@
   --bg-color: #fafafa;
 
   /* Fonts */
-  --font-body: "Roboto", system-ui, -apple-system, "Segoe UI", Arial, Helvetica, sans-serif;
-  --font-title: "Roboto","Playfair Display", Georgia, "Times New Roman", serif;
+  --font-body:  'Roboto', system-ui, -apple-system, Segoe UI, Arial, sans-serif;;
+  --font-title: "Playfair Display", Georgia, "Times New Roman", serif;
+   --font-brand: "Helvetica Neue", "Arial Black", Arial, Helvetica, sans-serif;
 
   /* Fluid typography */
   --fs-body: clamp(0.88rem, 0.84rem + 0.25vw, 0.98rem);
@@ -55,8 +56,22 @@ body {
 }
 
 h1, h2, h3,
-header h1,
 .result-card h3 { font-family: var(--font-title); }
+
+header h1 {
+  margin: 0;
+  text-align: center;
+
+  /* Brand look σαν HERITAGEnt */
+  font-family: var(--font-brand);
+  font-weight: 900;           /* μαύρο/black */
+  font-size: clamp(1.35rem, 1.05rem + 1.8vw, 2.1rem); /* ίσο με --fs-h1 */
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+
+  /* no variable settings για να μην παραμορφώνει */
+  font-stretch: normal;
+}
 
 img, svg { max-width: 100%; height: auto; display: block; }
 
@@ -99,16 +114,19 @@ header {
   z-index: 10;
   background: #fff;
   border-bottom: 1px solid #eee;
+  margin-bottom: 1rem;
+  height: 2.4rem;
 }
 header .container {
   display: flex;
   align-items: center;
   justify-content: center;
+  align-content: center;
   text-align: center;
   padding: var(--space-4) 0;
 }
 header h1 {
-  margin: 0;
+  margin: 0.7rem;
   font-size: clamp(1.2rem, 1rem + 1.5vw, 1.6rem);
   font-weight: 700;
   letter-spacing: -0.01em;
@@ -142,13 +160,13 @@ nav a:hover { background: #f3f5f7; }
   box-shadow: var(--shadow-1);
 }
 .sidebar h2 {
-  margin: 0 0 var(--space-3);
+  margin: 5 0 var(--space-3);
   font-size: var(--fs-h2);
 }
 .filter-group { margin-bottom: var(--space-4); }
 .filter-group label {
   display: block;
-  margin-bottom: .35rem;
+  margin-bottom: .7rem;
   color: var(--secondary-color);
   font-weight: 600;
 }
@@ -159,6 +177,7 @@ select, input[type="text"], .btn {
   border-radius: 8px;
   font: inherit;
   background: #fff;
+  margin-bottom: 0.3rem;
 }
 .btn {
   cursor: pointer;
@@ -179,7 +198,7 @@ select, input[type="text"], .btn {
   width: 100%;
   border: 1px solid #ddd;
   border-radius: var(--radius-1);
-  overflow: hidden;
+  overflow: hidden;;
 }
 @supports not (height: 1dvh) {
   #map { height: min(60vh, 720px); }
@@ -267,6 +286,10 @@ select, input[type="text"], .btn {
   font-size: clamp(0.72rem, 0.7rem + 0.16vw, 0.85rem);
   color: #333;
   box-shadow: var(--shadow-1);
+}
+
+.credits p{
+  margin-bottom: 0;
 }
 
 /* =========================
